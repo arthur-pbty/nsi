@@ -5,7 +5,7 @@
 bool = True
 while bool:
    try:
-      fichier = int(input("What is the size of your file in kio ? "))
+      fichier = int(input("What is the size of your file in kio? "))
       print("Fichier :", fichier, "kio", "=", fichier * 2**10, "octets", "=", fichier * 8 * 2**10, "bits")
       bool = False
    except:
