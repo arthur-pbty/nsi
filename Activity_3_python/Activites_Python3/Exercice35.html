@@ -1,0 +1,120 @@
+﻿
+
+<html>
+	
+<head>
+	<title>Exercice 3.5</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 6.3.0.298">
+	<meta name="description" content="" /> 
+	<meta name="keywords" content="">
+	
+	
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Activite_decouverte_Python.hml.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Exercice35");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	
+</head>
+
+<body>
+
+
+
+	
+		<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Exercice 3.5</h1>
+				
+				
+				<div id="topic_breadcrumb">
+					<a href="Lesbouclesinstructionsforwhile.html">Les boucles (instructions for, while)</a> &rsaquo;&rsaquo; <a href="Exercices3.html">Exercices 3</a> &rsaquo;&rsaquo; 
+				</div>
+				
+			</div>
+			
+			<div id="topic_header_nav">
+				
+				
+				<a href="Exercices3.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				
+				
+				<a href="Exercice34.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				
+				
+				<a href="Exercice36.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+	
+	
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps7"><span class="rvts48">★☆</span><br/><span class="rvts50">1) Ecrire le script du jeu de devinette suivant :</span></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><br/><span class="rvts42">Le jeu consiste à deviner un nombre entre 1 et 100 :</span><br/><span class="rvts42">---&gt;</span><span class="rvts39">&nbsp; &nbsp;50</span><br/><span class="rvts42">trop petit !</span><br/><span class="rvts42">---&gt;</span><span class="rvts39">&nbsp; &nbsp;75</span><br/><span class="rvts42">trop petit !</span><br/><span class="rvts42">---&gt;</span><span class="rvts39">&nbsp; &nbsp;87</span><br/><span class="rvts42">trop grand !</span><br/><span class="rvts42">---&gt;</span><span class="rvts39">&nbsp; &nbsp;81</span><br/><span class="rvts42">trop petit !</span><br/><span class="rvts42">---&gt;</span><span class="rvts39">&nbsp; &nbsp;84</span><br/><span class="rvts42">trop petit !</span><br/><span class="rvts42">---&gt;</span><span class="rvts39">&nbsp; &nbsp;85</span><br/><span class="rvts42">Gagné en 6 coups !</span></p>
+<p class="rvps7"><span class="rvts50">2) Quelle est la stratégie la plus efficace ?</span></p>
+<p class="rvps7"><span class="rvts50">3) Montrer que l'on peut deviner un nombre en 7 coups maximum.</span></p>
+<p class="rvps7"><span class="rvts50">Bibliographie :&nbsp;</span><a class="rvts99" href="http://fr.wikipedia.org/wiki/Dichotomie">La dichotomie</a></p>
+<p class="rvps7"><span class="rvts50">Remarque : pour créer un nombre entier aléatoire entre 1 et 100 :</span></p>
+<p class="rvps8"><span class="rvts47">import</span><span class="rvts39">&nbsp;random</span><br/><span class="rvts39">nombre = random.randint(1,100)</span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts15">Créé avec HelpNDoc Personal Edition: </span><a class="rvts16" href="https://www.helpndoc.com/fr/tour-des-fonctionnalites/creer-ebooks-pour-kindle-amazon">Générer facilement des livres électroniques Kindle</a></p>
+
+	</div>
+	
+	
+		<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				
+			</div>
+		</div>
+	
+	
+
+	
+</body>
+	
+</html>
+

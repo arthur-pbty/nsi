@@ -1,0 +1,136 @@
+﻿
+
+<html>
+	
+<head>
+	<title>Variables, types et op&eacute;rateurs</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 6.3.0.298">
+	<meta name="description" content="" /> 
+	<meta name="keywords" content="">
+	
+	
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Activite_decouverte_Python.hml.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Variablestypesetoperateurs");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	
+</head>
+
+<body>
+
+
+
+	
+		<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Variables, types et op&eacute;rateurs</h1>
+				
+				
+			</div>
+			
+			<div id="topic_header_nav">
+				
+				
+				<a href="Scripts.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				
+				
+				<a href="Nomsdevariables.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+	
+	
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts22">Notion de variables</span></p>
+<p class="rvps2"><span class="rvts21"><br/></span></p>
+<p class="rvps2"><span class="rvts21">Lorsque l’on écrit un programme informatique, on va manipuler des données comme des nombres entiers, des nombres à virgules, des chaînes de caractères.</span></p>
+<p class="rvps2"><span class="rvts21"><br/></span></p>
+<p class="rvps2"><span class="rvts21">Pour pouvoir manipuler facilement toutes ces données, on va les mémoriser, les stocker dans des </span><span class="rvts23">variables</span><span class="rvts21">, ce qui revient à les « ranger dans une boîte » et on va leur donner un nom, « coller une étiquette dessus ».</span></p>
+<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/NouvelElement147.png"></p>
+<p class="rvps2"><span class="rvts21"><br/></span></p>
+<p class="rvps2"><span class="rvts21">Le processeur sait très bien utiliser ces « boites&nbsp; » mémoires (c’est même son travail principal).</span></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps2"><span class="rvts12">Déclarer une variable</span><span class="rvts11">&nbsp;permet de réserver un espace mémoire volatile (cache, vive) dans lequel il est possible de </span><span class="rvts12">stocker</span><span class="rvts11">&nbsp;une valeur (une donnée), pour la </span><span class="rvts12">réutiliser</span><span class="rvts11">&nbsp;ou la </span><span class="rvts12">modifier</span><span class="rvts11">&nbsp;plus tard.</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts21">L’instruction d'</span><span class="rvts23">affectation</span><span class="rvts21">&nbsp;est l’action </span><span class="rvts23">d'associer une valeur</span><span class="rvts21">&nbsp;à cette variable.</span></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><span class="rvts11">En Python une affectation est effectuée avec le signe «&nbsp;</span><span class="rvts12">=</span><span class="rvts11">&nbsp;», la variable étant écrite en premier et le contenu qu’elle doit prendre étant écrit en deuxième.</span></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Exemple:</span></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps6"><span class="rvts11">x = 5</span><span class="rvts11"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts11"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts11">#On affecte à la variable nommée x la valeur 5</span></p>
+<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/NouvelElement146.png"></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><span class="rvts26">Remarque:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps5"><span class="rvts25">Une affectation dans une variable peut faire appel à la variable elle-même.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts25">Par exemple a = a + 1&nbsp;peut se traduire par&nbsp;: la variable a prend la valeur (actuelle) de a , + 1.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps5"><span class="rvts25">En informatique, « a = b » ne veut pas dire la même chose que « b = a ».</span></li>
+</ul>
+<p class="rvps5"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts15">Créé avec HelpNDoc Personal Edition: </span><a class="rvts16" href="https://www.helpndoc.com/fr/tour-des-fonctionnalites">Créer des livres électroniques facilement</a></p>
+
+	</div>
+	
+	
+		<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				
+			</div>
+		</div>
+	
+	
+
+	
+</body>
+	
+</html>
+

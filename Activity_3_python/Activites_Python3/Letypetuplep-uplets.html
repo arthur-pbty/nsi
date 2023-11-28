@@ -1,0 +1,132 @@
+﻿
+
+<html>
+	
+<head>
+	<title>Le type tuple (p-uplets)</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 6.3.0.298">
+	<meta name="description" content="" /> 
+	<meta name="keywords" content="">
+	
+	
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Activite_decouverte_Python.hml.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Letypetuplep-uplets");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	
+</head>
+
+<body>
+
+
+
+	
+		<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Le type tuple (p-uplets)</h1>
+				
+				
+				<div id="topic_breadcrumb">
+					<a href="Variablestypesetoperateurs.html">Variables, types et op&eacute;rateurs</a> &rsaquo;&rsaquo; 
+				</div>
+				
+			</div>
+			
+			<div id="topic_header_nav">
+				
+				
+				<a href="Variablestypesetoperateurs.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				
+				
+				<a href="Letypestrstringchainedecaractere.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				
+				
+				<a href="Letypelistliste.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+	
+	
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts57">Il est possible de "stocker" plusieurs données dans une même structure, ce type de structure est appelé une </span><span class="rvts58">séquence</span><span class="rvts57">. </span></p>
+<p class="rvps2"><span class="rvts57"><br/></span></p>
+<p class="rvps2"><span class="rvts57">De façon plus précise, nous définirons une </span><span class="rvts58">séquence comme un ensemble fini et ordonné d'éléments indicés de 0 à n-1</span><span class="rvts57">&nbsp;(si cette séquence comporte n éléments).</span></p>
+<p class="rvps2"><span class="rvts57"><br/></span></p>
+<p class="rvps2"><span class="rvts55">Dans un tuple, on peut avoir des éléments de plusieurs types.</span></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;infoperso_t = (</span><span class="rvts53">'Pierre'</span><span class="rvts39">, </span><span class="rvts53">'Dupont'</span><span class="rvts39">, 17, 1.75, 72.5)</span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts40"># le tuple infoperso contient 5 éléments de types str, str, int, float et float</span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(</span><span class="rvts41">type</span><span class="rvts39">(infoperso_t)) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts42"></span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(infoperso_t) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts42"></span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(</span><span class="rvts53">'Prénom : '</span><span class="rvts39">, infoperso_t[0]) &nbsp; </span><span class="rvts40"># premier élément (indice 0) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts42"></span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(</span><span class="rvts53">'Age : '</span><span class="rvts39">, infoperso_t[2]) &nbsp; </span><span class="rvts40"># le troisième élément a l'indice 2 </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts42"></span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(</span><span class="rvts53">'Taille : '</span><span class="rvts39">, infoperso_t[3]) &nbsp; </span><span class="rvts40"># le quatrième élément a l'indice 3 </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;a = infoperso_t[2]</span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(</span><span class="rvts41">type</span><span class="rvts39">(a)) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(a) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps2"><span class="rvts57">Il n'est pas possible de modifier un tuple après sa création (on parle d'objet "immutable"), si vous essayez de modifier un tuple existant, l'interpréteur Python vous renverra une erreur.</span></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;infoperso_t[0] = </span><span class="rvts59">'Bernard' </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps2"><span class="rvts57">Il n'est pas nécessaire d'utiliser des parenthèses pour créer un tuple:</span></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;mon_tuple = 'Bernard', 'Durand', 58, 1.82, 79.5</span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(mon_tuple) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps2"><span class="rvts57">Il est possible d'assigner à des variables les valeurs contenues dans un tuple :</span></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt; </span><span class="rvts39">a, b, c, d, e = mon_tuple</span></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(a) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(e) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts57"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts15">Créé avec HelpNDoc Personal Edition: </span><a class="rvts16" href="https://www.helpndoc.com/fr/outils-creation-aide">Création d'aide CHM, PDF, DOC et HTML d'une même source</a></p>
+
+	</div>
+	
+	
+		<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				
+			</div>
+		</div>
+	
+	
+
+	
+</body>
+	
+</html>
+

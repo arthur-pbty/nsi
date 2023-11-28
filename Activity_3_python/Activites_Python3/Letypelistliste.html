@@ -1,0 +1,123 @@
+﻿
+
+<html>
+	
+<head>
+	<title>Le type list (liste)</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 6.3.0.298">
+	<meta name="description" content="" /> 
+	<meta name="keywords" content="">
+	
+	
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Activite_decouverte_Python.hml.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Letypelistliste");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	
+</head>
+
+<body>
+
+
+
+	
+		<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Le type list (liste)</h1>
+				
+				
+				<div id="topic_breadcrumb">
+					<a href="Variablestypesetoperateurs.html">Variables, types et op&eacute;rateurs</a> &rsaquo;&rsaquo; 
+				</div>
+				
+			</div>
+			
+			<div id="topic_header_nav">
+				
+				
+				<a href="Variablestypesetoperateurs.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				
+				
+				<a href="Letypetuplep-uplets.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				
+				
+				<a href="Letypeboolbooleen.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+	
+	
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps7"><span class="rvts55">Une liste est une structure de données ou une séquence appelée également tableau.</span></p>
+<p class="rvps2"><span class="rvts57">Les listes sont comme les tuples mais à la différence qu'ils sont modifiables (on parle d'objets "mutables").</span></p>
+<p class="rvps2"><span class="rvts61"></span><br/><span class="rvts55">Le premier élément d'une liste possède donc l'indice (l'index) 0.</span><br/><span class="rvts55">Dans une liste, on peut avoir des éléments de plusieurs types.</span></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;infoperso_l = [</span><span class="rvts53">'Pierre'</span><span class="rvts39">, </span><span class="rvts53">'Dupont'</span><span class="rvts39">, 17, 1.75, 72.5]</span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts40"># la liste infoperso contient 5 éléments de types str, str, int, float et float</span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(</span><span class="rvts41">type</span><span class="rvts39">(infoperso_l)) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts42"></span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(infoperso_l) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts42"></span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(</span><span class="rvts53">'Prénom : '</span><span class="rvts39">, infoperso_l[0]) &nbsp; </span><span class="rvts40"># premier élément (indice 0) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts42"></span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(</span><span class="rvts53">'Masse : '</span><span class="rvts39">, infoperso_l[4]) &nbsp; </span><span class="rvts40"># le cinquième élément a l'indice 4 </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps7"><span class="rvts55">La fonction&nbsp;</span><span class="rvts56">range()</span><span class="rvts55">&nbsp;crée une liste d'entiers régulièrement espacés :</span></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;maliste = </span><span class="rvts41">range</span><span class="rvts39">(10)</span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(</span><span class="rvts41">list</span><span class="rvts39">(maliste)) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts42"></span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(</span><span class="rvts41">type</span><span class="rvts39">(maliste)) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;maliste = </span><span class="rvts41">range</span><span class="rvts39">(1,10,2) </span><span class="rvts40"># range(début,fin non comprise,intervalle)</span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(</span><span class="rvts41">list</span><span class="rvts39">(maliste)) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts42"></span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(maliste[2]) &nbsp;</span><span class="rvts40"># le troisième élément a l'indice 2 </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps7"><span class="rvts55">On peut créer une liste de listes, qui s'apparente à un tableau à 2 dimensions (ligne, colonne) :</span></p>
+<p class="rvps7"><span class="rvts60">&nbsp;0 &nbsp;1 &nbsp;2</span><br/><span class="rvts60">10 11 12</span><br/><span class="rvts60">20 21 22</span></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;maliste = [[0, 1, 2], [10, 11, 12], [20, 21, 22]]</span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(maliste[0]) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts42"></span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(maliste[0][0]) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts42"></span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(maliste[2][1]) &nbsp;</span><span class="rvts40"># élément à la troisième ligne et deuxième colonne </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts42"></span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;maliste[2][1] = 69 &nbsp;</span><span class="rvts40"># nouvelle affectation</span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(maliste) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts15">Créé avec HelpNDoc Personal Edition: </span><a class="rvts16" href="https://www.helpauthoringsoftware.com/fr">Nouvelles et informations sur les outils de logiciels de création d'aide</a></p>
+
+	</div>
+	
+	
+		<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				
+			</div>
+		</div>
+	
+	
+
+	
+</body>
+	
+</html>
+

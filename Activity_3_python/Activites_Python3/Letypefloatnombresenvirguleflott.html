@@ -1,0 +1,152 @@
+﻿
+
+<html>
+	
+<head>
+	<title>Le type float (nombres en virgule flottante)</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 6.3.0.298">
+	<meta name="description" content="" /> 
+	<meta name="keywords" content="">
+	
+	
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Activite_decouverte_Python.hml.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Letypefloatnombresenvirguleflott");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	
+</head>
+
+<body>
+
+
+
+	
+		<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Le type float (nombres en virgule flottante)</h1>
+				
+				
+				<div id="topic_breadcrumb">
+					<a href="Variablestypesetoperateurs.html">Variables, types et op&eacute;rateurs</a> &rsaquo;&rsaquo; 
+				</div>
+				
+			</div>
+			
+			<div id="topic_header_nav">
+				
+				
+				<a href="Variablestypesetoperateurs.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				
+				
+				<a href="Letypeintintegernombresentiers.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				
+				
+				<a href="Lesfonctionsmathematiques.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+	
+	
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;b = 17.0 &nbsp;</span><span class="rvts40"># le séparateur décimal est un point (et non une virgule)</span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(b) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts42"></span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(</span><span class="rvts41">type</span><span class="rvts39">(b)) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;c = 14.0/3.0</span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(c) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;c = 14.0//3.0 </span><span class="rvts40"># division entière</span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(c) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps7"><span class="rvts25">Attention: il faut éviter de faire des divisions entières sur des nombres négatifs</span></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(</span><span class="rvts42">7//3</span><span class="rvts39">) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(</span><span class="rvts42">-7//3</span><span class="rvts39">) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps7"><span class="rvts25">Attention : avec des nombres entiers, l'opérateur&nbsp;</span><span class="rvts32">/</span><span class="rvts25">&nbsp;fait une division classique et retourne toujours un type&nbsp;</span><span class="rvts32">float</span><span class="rvts25">&nbsp;:</span></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;c = 12/3</span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(c) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps7"><span class="rvts25">Notation scientifique :</span></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;a = -1.784892e4</span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(a) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps2"><span class="rvts11">Entre deux nombres donnés, par exemple entre 1 et 4, ou entre 3,5 et 3,6 ou entre – 10,36 et – 10,34… il existe une infinité d’autres nombres. Certaines sont des entiers, comme 2 ou 3, certains sont des décimaux comme 1,5 ou 2,3, d’autres sont des rationnels comme 4/3, d’autres sont des irrationnels comme </span><img alt="" style="padding : 1px;" src="lib/NouvelElement145.png"><span class="rvts11">.</span></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><span class="rvts11">Nous allons voir qu’en machine, certains nombres sont stockés de manière exacte et d’autre de manière approchée.</span></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts11">Calculer 0,1 + 0,2 en langage Python. </span></li>
+</ul>
+<p class="rvps2"><span class="rvts11">Expliquer pourquoi le résultat n’est pas celui attendu</span></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><span class="rvts11">On peut tester l’égalité de 0,1 + 0,2 avec 0,3</span></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;print (</span><span class="rvts42">0.1+0.2 == 0.3</span><span class="rvts39">)</span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps2"><span class="rvts43">Il faut éviter de tester l’égalité de deux flottants.</span></p>
+<p class="rvps2"><span class="rvts43"><br/></span></p>
+<p class="rvps2"><span class="rvts11">• La fonction «&nbsp;</span><span class="rvts12">float()</span><span class="rvts11">&nbsp;» permet de convertir un entier en flottant.</span></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;print (</span><span class="rvts45">float</span><span class="rvts42">(5)</span><span class="rvts39">)</span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps2"><span class="rvts11">• La fonction «&nbsp;</span><span class="rvts12">int()</span><span class="rvts11">» permet de convertir un flottant en entier.</span></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;print (</span><span class="rvts45">int</span><span class="rvts42">(4.8)</span><span class="rvts39">)</span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps2"><span class="rvts44">À tester avec des nombres positifs ou négatifs pour voir comment la valeur est obtenue (tronquée&nbsp;? arrondie&nbsp;?).</span></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><span class="rvts11">La fonction «&nbsp;</span><span class="rvts12">print&nbsp;()</span><span class="rvts11">» permet d’afficher des flottants en indiquant le nombre de chiffres à afficher après la virgule à l’aide de la chaîne </span><span class="rvts46">"%.2f" %x</span><span class="rvts11">&nbsp;dans laquelle le nombre devant f donne le nombre de décimales et x est le nombre à afficher.</span></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;x = 0.123456</span><br/><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(x) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(</span><span class="rvts45">"%.2f" %x</span><span class="rvts39">) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps2"><span class="rvts11">• Il faut être prudent avec les arrondis.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(</span><span class="rvts45">"%.2f" %0.1</span><span class="rvts39">) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(</span><span class="rvts45">"%.20f" %0.1</span><span class="rvts39">) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(</span><span class="rvts45">"%.20f" %0.125</span><span class="rvts39">) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><span class="rvts39">&nbsp;</span><span class="rvts41">print</span><span class="rvts39">(</span><span class="rvts45">1.2*3</span><span class="rvts39">) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts15">Créé avec HelpNDoc Personal Edition: </span><a class="rvts16" href="https://www.helpndoc.com/fr/creer-des-livres-numeriques-epub">Générateur complet de livres électroniques ePub</a></p>
+
+	</div>
+	
+	
+		<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				
+			</div>
+		</div>
+	
+	
+
+	
+</body>
+	
+</html>
+

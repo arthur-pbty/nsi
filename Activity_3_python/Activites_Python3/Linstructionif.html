@@ -1,0 +1,123 @@
+﻿
+
+<html>
+	
+<head>
+	<title>L'instruction if</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 6.3.0.298">
+	<meta name="description" content="" /> 
+	<meta name="keywords" content="">
+	
+	
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Activite_decouverte_Python.hml.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Linstructionif");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	
+</head>
+
+<body>
+
+
+
+	
+		<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">L'instruction if</h1>
+				
+				
+				<div id="topic_breadcrumb">
+					<a href="Lesconditionsinstructionsifelife.html">Les conditions (instructions if, elif, else)</a> &rsaquo;&rsaquo; 
+				</div>
+				
+			</div>
+			
+			<div id="topic_header_nav">
+				
+				
+				<a href="Lesconditionsinstructionsifelife.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				
+				
+				<a href="Lesconditionsinstructionsifelife.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				
+				
+				<a href="Linstructionelse.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+	
+	
+	<div id="topic_content">
+		
+<p></p>
+<h3 class="rvps12"><img alt="" style="padding : 1px;" src="lib/NouvelElement30.png"></h3>
+<h4 class="rvps13"><span class="rvts0"><span class="rvts64">Syntaxe</span></span></h4>
+<p class="rvps8"><span class="rvts47">if</span><span class="rvts39">&nbsp;expression: &nbsp; </span><span class="rvts40"># ne pas oublier le signe de ponctuation ':'</span><br/><span class="rvts81">&nbsp; &nbsp; </span><span class="rvts39">bloc d'instructions &nbsp;</span><span class="rvts40"># attention à l'indentation</span><br/><span class="rvts40"># suite du programme</span></p>
+<p class="rvps7"><span class="rvts11">Si l'expression est vraie (</span><span class="rvts12">True</span><span class="rvts11">) alors le bloc d'instructions est exécuté.</span><br/><span class="rvts11">Si l'expression est fausse (</span><span class="rvts12">False</span><span class="rvts11">) on passe directement à la suite du programme.</span></p>
+<p class="rvps7"><span class="rvts11">Nous allons commencer par créer le script&nbsp;</span><span class="rvts17">Condition1.py</span><span class="rvts11">&nbsp;:</span></p>
+<p class="rvps7"><img alt="" style="padding : 1px;" src="lib/NouvelElement23.png"></p>
+<p class="rvps8"><span class="rvts40"># script Condition1.py</span><br/><span class="rvts39">chaine = </span><span class="rvts41">input</span><span class="rvts39">(</span><span class="rvts53">"Note sur 20 : "</span><span class="rvts39">)</span><br/><span class="rvts39">note = </span><span class="rvts41">float</span><span class="rvts39">(chaine)</span><br/><span class="rvts47">if</span><span class="rvts39">&nbsp;note &gt;= 10.0:</span><br/><span class="rvts39">&nbsp; &nbsp; </span><span class="rvts40"># ce bloc est exécuté si l'expression (note &gt;= 10.0) est vraie</span><br/><span class="rvts39">&nbsp; &nbsp; </span><span class="rvts41">print</span><span class="rvts53">("J'ai la moyenne")</span><br/><span class="rvts41">print</span><span class="rvts53">("Fin du programme")</span></p>
+<p class="rvps7"><span class="rvts11">Pour exécuter le script :</span><br/><span class="rvts11">Cliquer sur exécuter </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><span class="rvts11">&nbsp;(ou touche Ctrl + F9) et tester.</span></p>
+<p class="rvps7"><span class="rvts11">Pour une meilleure compréhension des scripts, vous pouvez utiliser le site web PythonTutor et visualiser l'exécution pas à pas: </span><a class="rvts37" href="http://pythontutor.com/visualize.html#mode=edit">http://pythontutor.com/visualize.html#mode=edit</a><span class="rvts11">&nbsp;</span></p>
+<h3 class="rvps12"><span class="rvts0"><span class="rvts80"><br/></span></span></h3>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts15">Créé avec HelpNDoc Personal Edition: </span><a class="rvts16" href="https://www.helpndoc.com/fr/tour-des-fonctionnalites">Créer facilement des fichiers Qt Help</a></p>
+
+	</div>
+	
+	
+		<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				
+			</div>
+		</div>
+	
+	
+
+	
+</body>
+	
+</html>
+

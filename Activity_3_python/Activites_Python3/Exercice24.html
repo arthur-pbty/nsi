@@ -1,0 +1,169 @@
+﻿
+
+<html>
+	
+<head>
+	<title>Exercice 2.4</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 6.3.0.298">
+	<meta name="description" content="" /> 
+	<meta name="keywords" content="">
+	
+	
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Activite_decouverte_Python.hml.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Exercice24");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	
+</head>
+
+<body>
+
+
+
+	
+		<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Exercice 2.4</h1>
+				
+				
+				<div id="topic_breadcrumb">
+					<a href="Lesconditionsinstructionsifelife.html">Les conditions (instructions if, elif, else)</a> &rsaquo;&rsaquo; <a href="Exercices2.html">Exercices 2</a> &rsaquo;&rsaquo; 
+				</div>
+				
+			</div>
+			
+			<div id="topic_header_nav">
+				
+				
+				<a href="Exercices2.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				
+				
+				<a href="Exercice23.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				
+				
+				<a href="Exercice25.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+	
+	
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps7"><span class="rvts65">★</span><span class="rvts50">&nbsp;Ecrire un script qui calcule l'indice de masse corporelle (IMC) d'un adulte et qui en donne l'interprétation (corpulence normale, surpoids...).</span></p>
+<p class="rvps7"><span class="rvts50">IMC(kg/m</span><span class="rvts85">2</span><span class="rvts50">) = masse/taille</span><span class="rvts85">2</span></p>
+<p class="rvps14"><span class="rvts92">L’interprétation se fait selon la classification de l’OMS&nbsp;(Organisation Mondiale de la Santé).</span></p>
+<div class="rvps2"><table width="630" border="1" cellpadding="12" cellspacing="-1" style="border-width: 0px; background-color: #ffffff; border-collapse: collapse;">
+<tr valign="top">
+<td width="147" valign="middle" style="border-width : 1px; border-style: inset; padding: 10px 15px; border-right: none; border-left: none; background-color: #e4e4e4;"><p class="rvps2"><span class="rvts86">IMC (kg/m</span><span class="rvts87">2</span><span class="rvts86">)</span></p>
+</td>
+<td width="421" valign="middle" style="border-width : 1px; border-style: inset; padding: 10px 15px; border-right: none; border-left: none; background-color: #e4e4e4;"><p class="rvps2"><span class="rvts86">Interprétation (selon l’OMS)</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="147" valign="middle" style="border-width : 1px; border-style: inset; padding: 10px 15px; border-right: none; border-left: none;"><p class="rvps2"><span class="rvts88">Inférieur à 16</span></p>
+</td>
+<td width="421" valign="middle" style="border-width : 1px; border-style: inset; padding: 10px 15px; border-right: none; border-left: none;"><p class="rvps2"><span class="rvts88">Anorexie ou dénutrition</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="147" valign="middle" style="border-width : 1px; border-style: inset; padding: 10px 15px; border-right: none; border-left: none; background-color: #fafafa;"><p class="rvps2"><span class="rvts88">Entre 16.5 et 18.5</span></p>
+</td>
+<td width="421" valign="middle" style="border-width : 1px; border-style: inset; padding: 10px 15px; border-right: none; border-left: none; background-color: #fafafa;"><p class="rvps2"><span class="rvts88">Maigreur</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="147" valign="middle" style="border-width : 1px; border-style: inset; padding: 10px 15px; border-right: none; border-left: none;"><p class="rvps2"><span class="rvts89">Entre 18.5 et 25</span></p>
+</td>
+<td width="421" valign="middle" style="border-width : 1px; border-style: inset; padding: 10px 15px; border-right: none; border-left: none;"><p class="rvps2"><span class="rvts89">Corpulence normale</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="147" valign="middle" style="border-width : 1px; border-style: inset; padding: 10px 15px; border-right: none; border-left: none; background-color: #fafafa;"><p class="rvps2"><span class="rvts90">Entre 25 et 30</span></p>
+</td>
+<td width="421" valign="middle" style="border-width : 1px; border-style: inset; padding: 10px 15px; border-right: none; border-left: none; background-color: #fafafa;"><p class="rvps2"><span class="rvts90">Surpoids</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="147" valign="middle" style="border-width : 1px; border-style: inset; padding: 10px 15px; border-right: none; border-left: none;"><p class="rvps2"><span class="rvts91">Entre 30 et 35</span></p>
+</td>
+<td width="421" valign="middle" style="border-width : 1px; border-style: inset; padding: 10px 15px; border-right: none; border-left: none;"><p class="rvps2"><span class="rvts91">Obésité modérée (Classe 1)</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="147" valign="middle" style="border-width : 1px; border-style: inset; padding: 10px 15px; border-right: none; border-left: none; background-color: #fafafa;"><p class="rvps2"><span class="rvts91">Entre 35 et 40</span></p>
+</td>
+<td width="421" valign="middle" style="border-width : 1px; border-style: inset; padding: 10px 15px; border-right: none; border-left: none; background-color: #fafafa;"><p class="rvps2"><span class="rvts91">Obésité élevé (Classe 2)</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="147" valign="middle" style="border-width : 1px; border-style: inset; padding: 10px 15px; border-right: none; border-left: none;"><p class="rvps2"><span class="rvts91">Supérieur à 40</span></p>
+</td>
+<td width="421" valign="middle" style="border-width : 1px; border-style: inset; padding: 10px 15px; border-right: none; border-left: none;"><p class="rvps2"><span class="rvts91">Obésité morbide ou massive</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps7"><span class="rvts85"></span><br/><span class="rvts50">Par exemple :</span></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><br/><span class="rvts42">Votre taille en cm ?</span><span class="rvts39">&nbsp;170</span><br/><span class="rvts42">Votre masse en kg ?</span><span class="rvts39">&nbsp;68.5</span><br/><span class="rvts42">IMC = 23.70 kg/m²</span><br/><span class="rvts42">Interprétation : corpulence normale</span><br/><span class="rvts38">&gt;&gt;&gt;</span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts15">Créé avec HelpNDoc Personal Edition: </span><a class="rvts16" href="https://www.helpndoc.com/fr/tour-des-fonctionnalites">Générateur d'aide complet</a></p>
+
+	</div>
+	
+	
+		<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				
+			</div>
+		</div>
+	
+	
+
+	
+</body>
+	
+</html>
+

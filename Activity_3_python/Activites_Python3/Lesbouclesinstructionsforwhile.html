@@ -1,0 +1,181 @@
+﻿
+
+<html>
+	
+<head>
+	<title>Les boucles (instructions for, while)</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 6.3.0.298">
+	<meta name="description" content="" /> 
+	<meta name="keywords" content="">
+	
+	
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Activite_decouverte_Python.hml.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Lesbouclesinstructionsforwhile");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	
+</head>
+
+<body>
+
+
+
+	
+		<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Les boucles (instructions for, while)</h1>
+				
+				
+			</div>
+			
+			<div id="topic_header_nav">
+				
+				
+				<a href="Exercice25.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				
+				
+				<a href="Linstructionwhile.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+	
+	
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps7"><span class="rvts25">Une boucle permet d'exécuter une portion de code plusieurs fois de suite.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 96px; list-style-position: outside; list-style-type: disc;">
+<li style="margin-left: 0px" class="rvps15"><span class="rvts75">Boucle non bornée </span></li>
+</ul>
+<p class="rvps15"><span class="rvts75"><br/></span></p>
+<div class="rvps11"><table width="679" border="1" cellpadding="4" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+<tr valign="top">
+<td width="138" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps3"><span class="rvts76">Séquence</span></p>
+</td>
+<td width="228" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps3"><span class="rvts76">Algorithme</span></p>
+</td>
+<td width="270" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps3"><span class="rvts76">Algorigramme</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="138" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps2"><span class="rvts77"><br/></span></p>
+<p class="rvps2"><span class="rvts77"><br/></span></p>
+<p class="rvps2"><span class="rvts76">Répétitive ou itérative à condition initiale</span></p>
+</td>
+<td width="228" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps2"><span class="rvts76"><br/></span></p>
+<p class="rvps2"><span class="rvts76">TANT QUE</span><span class="rvts78">&nbsp;la condition est vrai</span></p>
+<p class="rvps2"><span class="rvts78">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Faire “Traitement”</span></p>
+<p class="rvps2"><span class="rvts76">Fin TANT QUE</span></p>
+</td>
+<td width="270" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps3"><img width="144" height="105" alt="" style="padding : 1px;" src="lib/NouvelElement160.png"></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="138" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps2"><span class="rvts77"><br/></span></p>
+<p class="rvps2"><span class="rvts77"><br/></span></p>
+<p class="rvps2"><span class="rvts76">Répétitive ou itérative à condition finale</span></p>
+</td>
+<td width="228" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps2"><span class="rvts76"><br/></span></p>
+<p class="rvps2"><span class="rvts76">RÉPÉTER</span></p>
+<p class="rvps2"><span class="rvts78">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;“Traitement”</span></p>
+<p class="rvps2"><span class="rvts76">JUSQU'À </span><span class="rvts78">“Condition” vraie</span></p>
+</td>
+<td width="270" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps3"><img width="142" height="116" alt="" style="padding : 1px;" src="lib/NouvelElement161.png"></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts77"><br/></span></p>
+<p class="rvps15" style="page-break-before: always;"><span class="rvts77"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 96px; list-style-position: outside; list-style-type: disc;">
+<li style="margin-left: 0px" class="rvps15"><span class="rvts75">Boucle bornée </span></li>
+</ul>
+<p class="rvps15"><span class="rvts75"><br/></span></p>
+<div class="rvps11"><table width="678" border="1" cellpadding="4" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+<tr valign="top">
+<td width="175" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps3"><span class="rvts76">Séquence</span></p>
+</td>
+<td width="243" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps3"><span class="rvts76">Algorithme</span></p>
+</td>
+<td width="217" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps3"><span class="rvts76">Algorigramme</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="175" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps2"><span class="rvts77"><br/></span></p>
+<p class="rvps2"><span class="rvts77"><br/></span></p>
+<p class="rvps2"><span class="rvts77"><br/></span></p>
+<p class="rvps2"><span class="rvts76">Boucle avec comptage</span></p>
+</td>
+<td width="243" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps2"><span class="rvts76"><br/></span></p>
+<p class="rvps2"><span class="rvts76"><br/></span></p>
+<p class="rvps2"><span class="rvts76">POUR</span><span class="rvts78">&nbsp;i </span><span class="rvts76">allant de</span><span class="rvts78">&nbsp;VI </span><span class="rvts76">jusqu’à</span><span class="rvts78">&nbsp;VF</span></p>
+<p class="rvps2"><span class="rvts78">&nbsp; &nbsp; &nbsp; &nbsp; Faire “Traitement”</span></p>
+<p class="rvps2"><span class="rvts76">Fin POUR</span></p>
+</td>
+<td width="217" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps2"><img width="159" height="156" alt="" style="padding : 1px;" src="lib/NouvelElement159.png"></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts93"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts15">Créé avec HelpNDoc Personal Edition: </span><a class="rvts16" href="https://www.helpndoc.com/fr/tour-des-fonctionnalites">Créer des documents d'aide HTML facilement</a></p>
+
+	</div>
+	
+	
+		<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				
+			</div>
+		</div>
+	
+	
+
+	
+</body>
+	
+</html>
+

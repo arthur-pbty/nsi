@@ -1,0 +1,162 @@
+﻿
+
+<html>
+	
+<head>
+	<title>Le type int (integer: nombres entiers)</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 6.3.0.298">
+	<meta name="description" content="" /> 
+	<meta name="keywords" content="">
+	
+	
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Activite_decouverte_Python.hml.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Letypeintintegernombresentiers");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	
+</head>
+
+<body>
+
+
+
+	
+		<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Le type int (integer: nombres entiers)</h1>
+				
+				
+				<div id="topic_breadcrumb">
+					<a href="Variablestypesetoperateurs.html">Variables, types et op&eacute;rateurs</a> &rsaquo;&rsaquo; 
+				</div>
+				
+			</div>
+			
+			<div id="topic_header_nav">
+				
+				
+				<a href="Variablestypesetoperateurs.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				
+				
+				<a href="Nomsdevariables.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				
+				
+				<a href="Letypefloatnombresenvirguleflott.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+	
+	
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts11">Depuis EduPython (IDLE PyScripter), saisir ces lignes de programme dans la Console Python (interpréteur Python en mode interactif) </span></p>
+<p class="rvps7"><span class="rvts25">Pour affecter (on dit aussi assigner) la valeur 16 à la variable nommée&nbsp;</span><span class="rvts28">age</span><span class="rvts25">&nbsp;:</span></p>
+<p class="rvps7"><img alt="" style="padding : 1px;" src="lib/NouvelElement155.png"></p>
+<p class="rvps7"><span class="rvts25">Afin que vous gardiez une trace de votre travail, saisir les différentes lignes de programme dans la zone de saisie puis </span><span class="rvts11">exécuter </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><span class="rvts11">&nbsp;pour voir le résultat dans la console Python. </span></p>
+<p class="rvps7"><img alt="" style="padding : 1px;" src="lib/NouvelElement156.png"></p>
+<p class="rvps7"><span class="rvts11">Désormais vous pourrez utiliser la </span><span class="rvts25">fonction&nbsp;</span><span class="rvts32">print()</span><span class="rvts25">&nbsp;pour afficher la valeur de la variable comme un "outil de debogage" (aide à analyser les bugs d'un programme).</span></p>
+<p class="rvps7"><span class="rvts11">Pour une meilleure compréhension des scripts et et éviter l'usage du </span><span class="rvts12">print()</span><span class="rvts11">, vous pouvez utiliser le site web PythonTutor et visualiser l'exécution pas à pas&nbsp;</span><span class="rvts12">&nbsp;:&nbsp;</span><span class="rvts11">&nbsp;</span><a class="rvts37" href="http://pythontutor.com/visualize.html#mode=edit">http://pythontutor.com/visualize.html#mode=edit</a><span class="rvts11">&nbsp;</span></p>
+<p class="rvps7"><img alt="" style="padding : 1px;" src="lib/NouvelElement167.png"></p>
+<p class="rvps7"><span class="rvts26">Remarque</span><span class="rvts25">: Il est possible en langage Python de réaliser des affectations multiples:</span></p>
+<p class="rvps8"><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;</span><span class="rvts33">a,b = 2,3</span></p>
+<p class="rvps8"><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;</span><span class="rvts29">print</span><span class="rvts28">(a) &nbsp;</span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps8"><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;</span><span class="rvts29">print</span><span class="rvts28">(b) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps2"><span class="rvts25">En programmation, le codage de la variable diffère en fonction de la donnée utilisée (booléen, nombre entiers, nombre à virgule, caractères...). On parle alors de </span><span class="rvts35">type de variable.</span></p>
+<p class="rvps2"><span class="rvts25">En langage Python, le typage est dynamique ce qui signifie que c’est l’instruction d’affectation qui va définir le type de la variable.</span></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps7"><span class="rvts25">La fonction&nbsp;</span><span class="rvts32">type()</span><span class="rvts25">&nbsp;retourne le type de la variable :</span></p>
+<p class="rvps8"><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;</span><span class="rvts29">print</span><span class="rvts28">(</span><span class="rvts29">type</span><span class="rvts28">(age)) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps7"><span class="rvts32">int</span><span class="rvts25">&nbsp;est le type des nombres entiers.</span></p>
+<p class="rvps8"><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;</span><span class="rvts33">x=</span><span class="rvts31">0b11111011101</span><br/><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;</span><span class="rvts29">print</span><span class="rvts28">(x) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps8"><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;y=</span><span class="rvts34">0x7DD</span><br/><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;</span><span class="rvts29">print</span><span class="rvts28">(y) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps2"><span class="rvts24">Rappel:</span></p>
+<p class="rvps2"><span class="rvts11">La notation «&nbsp;0b…&nbsp;» &nbsp;indique que la valeur du nombre est en binaire.</span></p>
+<p class="rvps2"><span class="rvts11">La notation «&nbsp;0x…&nbsp;» &nbsp;indique que la valeur du nombre est en hexadécimal.</span></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts11">On peut convertir un nombre en binaire en utilisant la fonction «&nbsp;</span><span class="rvts12">bin()</span><span class="rvts11">&nbsp;». Par exemple: </span></li>
+</ul>
+<p class="rvps8"><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;binaire=</span><span class="rvts36">bin</span><span class="rvts34">(25)</span><br/><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;</span><span class="rvts29">print</span><span class="rvts28">(binaire) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts11">On peut convertir un nombre en décimal en écrivant simplement sa valeur.</span></li>
+</ul>
+<p class="rvps8"><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;decimal=</span><span class="rvts34">0x1FA</span><br/><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;</span><span class="rvts29">print</span><span class="rvts28">(decimal) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts11">On peut convertir un nombre en hexadécimal en utilisant la fonction «&nbsp;</span><span class="rvts12">hex()</span><span class="rvts11">&nbsp;».</span></li>
+</ul>
+<p class="rvps8"><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;hexadecimal=</span><span class="rvts36">hex</span><span class="rvts34">(506)</span><br/><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;</span><span class="rvts29">print</span><span class="rvts28">(hexadecimal) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><span class="rvts11">Commenter et documenter son programme sont essentiels pour maintenir un code clair et pour faciliter la collaboration avec d'autres personnes. Cette pratique de programmation permet également de se rappeler ultérieurement l'utilité de telle ou telle variable, méthode, etc...</span></p>
+<p class="rvps8"><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;</span><span class="rvts31"># ceci est un commentaire</span><br/><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;age = age + 1 </span><span class="rvts31"># en plus court : age += 1</span><br/><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;</span><span class="rvts29">print</span><span class="rvts28">(age) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts28"></span><br/><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;age = age - 3 </span><span class="rvts31"># en plus court : age -= 3</span><br/><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;</span><span class="rvts29">print</span><span class="rvts28">(age) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts28"></span><br/><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;age = age*2 &nbsp;</span><span class="rvts31"># en plus court : age *= 2</span><br/><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;</span><span class="rvts29">print</span><span class="rvts28">(age) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts28"><br/></span></p>
+<p class="rvps8"><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;a = 6*3 - 20</span><br/><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;</span><span class="rvts29">print</span><span class="rvts28">(a) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps8"><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;b = 25</span><br/><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;c = a + 2*b</span><br/><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;</span><span class="rvts29">print</span><span class="rvts28">(b, c) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts31"># ne pas oublier la virgule </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps7"><span class="rvts25">L'opérateur&nbsp;</span><span class="rvts32">//</span><span class="rvts25">&nbsp;donne la division entière :</span></p>
+<p class="rvps8"><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;tour = 450//360</span><br/><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;</span><span class="rvts29">print</span><span class="rvts28">(tour) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps7"><span class="rvts25">L'opérateur&nbsp;</span><span class="rvts32">%</span><span class="rvts25">&nbsp;donne le reste de la division (opération modulo) :</span></p>
+<p class="rvps8"><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;angle = 450%360</span><br/><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;</span><span class="rvts29">print</span><span class="rvts28">(angle) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps7"><span class="rvts25">L'opérateur&nbsp;</span><span class="rvts32">**</span><span class="rvts25">&nbsp;donne la puissance :</span></p>
+<p class="rvps8"><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;mo = 2**20</span><br/><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;</span><span class="rvts29">print</span><span class="rvts28">(mo) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts25"></span><br/><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;racine2 = 2**0.5</span><br/><span class="rvts30">&gt;&gt;&gt;</span><span class="rvts28">&nbsp;</span><span class="rvts29">print</span><span class="rvts28">(racine2) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts15">Créé avec HelpNDoc Personal Edition: </span><a class="rvts16" href="https://www.helpauthoringsoftware.com/fr">Qu'est-ce qu'un outil de création d'aide ?</a></p>
+
+	</div>
+	
+	
+		<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				
+			</div>
+		</div>
+	
+	
+
+	
+</body>
+	
+</html>
+

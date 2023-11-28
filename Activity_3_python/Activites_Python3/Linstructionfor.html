@@ -1,0 +1,140 @@
+﻿
+
+<html>
+	
+<head>
+	<title>L'instruction for</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 6.3.0.298">
+	<meta name="description" content="" /> 
+	<meta name="keywords" content="">
+	
+	
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Activite_decouverte_Python.hml.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Linstructionfor");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	
+</head>
+
+<body>
+
+
+
+	
+		<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">L'instruction for</h1>
+				
+				
+				<div id="topic_breadcrumb">
+					<a href="Lesbouclesinstructionsforwhile.html">Les boucles (instructions for, while)</a> &rsaquo;&rsaquo; 
+				</div>
+				
+			</div>
+			
+			<div id="topic_header_nav">
+				
+				
+				<a href="Lesbouclesinstructionsforwhile.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				
+				
+				<a href="Linstructionwhile.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				
+				
+				<a href="Exercices3.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+	
+	
+	<div id="topic_content">
+		
+<p></p>
+<h4 class="rvps13"><span class="rvts0"><span class="rvts64">Syntaxe</span></span></h4>
+<p class="rvps8"><span class="rvts47">for</span><span class="rvts39">&nbsp;élément </span><span class="rvts47">in</span><span class="rvts39">&nbsp;séquence :</span><br/><span class="rvts81">&nbsp; &nbsp; </span><span class="rvts39">bloc d'instructions</span><br/><span class="rvts40"># suite du programme</span></p>
+<p class="rvps7"><span class="rvts50">Les éléments de la séquence sont issus d'une chaîne de caractères ou bien d'une liste.</span></p>
+<h4 class="rvps13"><span class="rvts0"><span class="rvts64">Exemple avec une séquence de caractères</span></span></h4>
+<p class="rvps8"><span class="rvts40"># script Boucle4.py</span><br/><span class="rvts39">chaine = </span><span class="rvts53">'Bonsoir'</span><br/><span class="rvts47">for</span><span class="rvts39">&nbsp;lettre </span><span class="rvts47">in</span><span class="rvts39">&nbsp;chaine: &nbsp;</span><span class="rvts40"># lettre est la variable d'itération</span><br/><span class="rvts39">&nbsp; &nbsp; </span><span class="rvts41">print</span><span class="rvts39">(lettre)</span><br/><span class="rvts41">print</span><span class="rvts53">("Fin de la boucle")</span></p>
+<p class="rvps8"><span class="rvts53">Exécuter </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><span class="rvts11">&nbsp;</span></p>
+<p class="rvps7"><span class="rvts11">La variable&nbsp;</span><span class="rvts17">lettre</span><span class="rvts11">&nbsp;est initialisée avec le premier élément de la séquence (</span><span class="rvts72">'</span><span class="rvts17">B</span><span class="rvts72">'</span><span class="rvts11">).</span><br/><span class="rvts11">Le bloc d'instructions est alors exécuté.</span><br/><span class="rvts11">Puis la variable&nbsp;</span><span class="rvts17">lettre</span><span class="rvts11">&nbsp;est mise à jour avec le second élément de la séquence (</span><span class="rvts72">'</span><span class="rvts17">o</span><span class="rvts72">'</span><span class="rvts11">) et le bloc d'instructions à nouveau exécuté...</span><br/><span class="rvts11">Le bloc d'instructions est exécuté une dernière fois lorsqu'on arrive au dernier élément de la séquence (</span><span class="rvts72">'</span><span class="rvts17">r</span><span class="rvts72">'</span><span class="rvts11">) :</span></p>
+<h4 class="rvps13"><span class="rvts0"><span class="rvts64">Exemple avec les éléments d'une liste</span></span></h4>
+<p class="rvps8"><span class="rvts40"># script Boucle5.py</span><br/><span class="rvts39">maliste = [</span><span class="rvts53">'Pierre'</span><span class="rvts39">, 67.5, 18]</span><br/><span class="rvts47">for</span><span class="rvts39">&nbsp;element </span><span class="rvts47">in</span><span class="rvts39">&nbsp;maliste:</span><br/><span class="rvts39">&nbsp; &nbsp; </span><span class="rvts41">print</span><span class="rvts39">(element)</span><br/><span class="rvts41">print</span><span class="rvts53">("Fin de la boucle")</span></p>
+<p class="rvps8"><span class="rvts53">Exécuter </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><span class="rvts11">&nbsp; et tester</span></p>
+<p class="rvps7"><span class="rvts11">Là, on affiche dans l'ordre les éléments de la liste :</span></p>
+<h4 class="rvps13"><span class="rvts0"><span class="rvts64">Fonction&nbsp;</span></span><span class="rvts0"><span class="rvts94">range()</span></span></h4>
+<p class="rvps7"><span class="rvts11">L'association avec la fonction&nbsp;</span><span class="rvts17">range()</span><span class="rvts11">&nbsp;est très utile pour créer des séquences automatiques de nombres entiers :</span></p>
+<p class="rvps8"><span class="rvts40"># script Boucle6.py</span><br/><span class="rvts41">print</span><span class="rvts39">(</span><span class="rvts41">list</span><span class="rvts39">(</span><span class="rvts41">range</span><span class="rvts39">(1,5)))</span><br/><span class="rvts47">for</span><span class="rvts39">&nbsp;i </span><span class="rvts47">in</span><span class="rvts39">&nbsp;</span><span class="rvts41">range</span><span class="rvts39">(1,5):</span><br/><span class="rvts39">&nbsp; &nbsp; </span><span class="rvts41">print</span><span class="rvts39">(i)</span><br/><span class="rvts41">print</span><span class="rvts53">("Fin de la boucle")</span></p>
+<p class="rvps8"><span class="rvts38">&gt;&gt;&gt;</span><br/><span class="rvts42">[1, 2, 3, 4]</span><br/><span class="rvts42">1</span><br/><span class="rvts42">2</span><br/><span class="rvts42">3</span><br/><span class="rvts42">4</span><br/><span class="rvts42">Fin de la boucle</span></p>
+<h4 class="rvps13"><span class="rvts0"><span class="rvts64">Table de multiplication</span></span></h4>
+<p class="rvps7"><span class="rvts11">La création d'une table de multiplication paraît plus simple avec une boucle&nbsp;</span><span class="rvts17">for</span><span class="rvts11">&nbsp;qu'avec une boucle&nbsp;</span><span class="rvts17">while</span><span class="rvts11">&nbsp;:</span></p>
+<p class="rvps8"><span class="rvts40"># script Boucle7.py</span><br/><span class="rvts47">for</span><span class="rvts39">&nbsp;compteur </span><span class="rvts47">in</span><span class="rvts39">&nbsp;</span><span class="rvts41">range</span><span class="rvts39">(1,11):</span><br/><span class="rvts39">&nbsp; &nbsp; </span><span class="rvts41">print</span><span class="rvts39">(compteur, </span><span class="rvts53">'* 9 ='</span><span class="rvts39">, compteur*9)</span><br/><span class="rvts41">print</span><span class="rvts53">("Et voilà !")</span></p>
+<p class="rvps8"><span class="rvts53">Exécuter </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><span class="rvts11">&nbsp;</span></p>
+<h3 class="rvps12"><span class="rvts0"><span class="rvts80">L'instruction&nbsp;</span></span><span class="rvts0"><span class="rvts95">break</span></span></h3>
+<p class="rvps7"><span class="rvts11">L'instruction&nbsp;</span><span class="rvts17">break</span><span class="rvts11">&nbsp;provoque une sortie immédiate d'une boucle&nbsp;</span><span class="rvts17">while</span><span class="rvts11">&nbsp;ou d'une boucle&nbsp;</span><span class="rvts17">for</span><span class="rvts11">.</span></p>
+<p class="rvps7"><span class="rvts11">Dans l'exemple suivant, l'expression&nbsp;</span><span class="rvts17">True</span><span class="rvts11">&nbsp;est toujours ... vraie : on a une boucle sans fin.</span><br/><span class="rvts11">L'instruction&nbsp;</span><span class="rvts17">break</span><span class="rvts11">&nbsp;est donc le seul moyen de sortir de la boucle.</span></p>
+<h4 class="rvps13"><span class="rvts0"><span class="rvts64">Affichage de l'heure courante</span></span></h4>
+<p class="rvps8"><span class="rvts40"># script Boucle8.py</span><br/><span class="rvts47">import</span><span class="rvts39">&nbsp;time &nbsp; &nbsp; </span><span class="rvts40"># importation du module time</span><br/><span class="rvts47">while</span><span class="rvts39">&nbsp;</span><span class="rvts41">True</span><span class="rvts39">:</span><br/><span class="rvts39">&nbsp; &nbsp; </span><span class="rvts40"># strftime() est une fonction du module time</span><br/><span class="rvts39">&nbsp; &nbsp; </span><span class="rvts41">print</span><span class="rvts39">(</span><span class="rvts53">'Heure courante '</span><span class="rvts39">, time.strftime(</span><span class="rvts53">'%H:%M:%S'</span><span class="rvts39">))</span><br/><span class="rvts39">&nbsp; &nbsp; quitter = input(</span><span class="rvts53">'Voulez-vous quitter le programme (o/n) ? '</span><span class="rvts39">)</span><br/><span class="rvts39">&nbsp; &nbsp; </span><span class="rvts47">if</span><span class="rvts39">&nbsp;quitter == </span><span class="rvts53">'o'</span><span class="rvts39">:</span><br/><span class="rvts39">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts47">break</span><br/><span class="rvts41">print</span><span class="rvts53">("A bientôt")</span></p>
+<p class="rvps8"><span class="rvts53">Exécuter </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><span class="rvts11">&nbsp; et tester</span></p>
+<h3 class="rvps12"><span class="rvts0"><span class="rvts80">Astuce</span></span></h3>
+<p class="rvps7"><span class="rvts11">Si vous connaissez le nombre de boucles à effectuer, utiliser une boucle&nbsp;</span><span class="rvts17">for</span><span class="rvts11">.</span><br/><span class="rvts11">Autrement, utiliser une boucle&nbsp;</span><span class="rvts17">while </span><span class="rvts11">(notamment pour faire des boucles sans fin).</span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts15">Créé avec HelpNDoc Personal Edition: </span><a class="rvts16" href="https://www.helpndoc.com/fr">Générateur de documentation complet</a></p>
+
+	</div>
+	
+	
+		<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				
+			</div>
+		</div>
+	
+	
+
+	
+</body>
+	
+</html>
+
