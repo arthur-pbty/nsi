@@ -44,22 +44,22 @@
             }
             ?>
             </select>
-            <button type="submit">Valider</button>
+            <button type="submit">Validate</button>
         </form>
     </header>
     <main>
         <section>
-            <h2>Bienvenue sur le générateur de calendrier</h2>
-            <p>Ce site vous permet de générer les calendriers pour différents mois en fonction de l'année que vous spécifiez. Entrez le mois et l'année dans le formulaire ci-dessus et cliquez sur "Valider" pour voir le calendrier correspondant.</p>
+            <h2>Welcome to the calendar generator</h2>
+            <p>This site allows you to generate calendars for different months according to the year you specify. Enter the month and year in the form above and click on "Validate" to see the corresponding calendar.</p>
         </section>
 
         <section>
-            <h2>Comment utiliser :</h2>
-            <p>Entrez le mois et l'année dans les menus déroulants ci-dessus.</p>
-            <p>Choisissez le mois en utilisant le premier menu déroulant. Vous pouvez sélectionner n'importe quel mois de l'année en choisissant parmi les options disponibles.</p>
-            <p>Ensuite, sélectionnez l'année à partir du deuxième menu déroulant. Les années disponibles commencent par il y a 100 ans et vont jusque dans 100 ans</p>
-            <p>Une fois que vous avez choisi un mois et une année, cliquez sur le bouton "Valider" pour générer le calendrier correspondant.</p>
-            <p>Le calendrier généré affichera les jours de la semaine ainsi que les dates pour le mois et l'année sélectionnés.</p>
+            <h2>How to use :</h2>
+            <p>Enter the month and year in the drop-down menus above.</p>
+            <p>Select the month using the first drop-down menu. You can select any month of the year by choosing from the available options.</p>
+            <p>Then select the year from the second drop-down menu. Available years start with 100 years ago and go up to 100 years from now.</p>
+            <p>Once you've chosen a month and year, click on the "Validate" button to generate the corresponding calendar.</p>
+            <p>The calendar generated will display the days of the week as well as the dates for the selected month and year.</p>
         </section>
     </main>
 </body>
