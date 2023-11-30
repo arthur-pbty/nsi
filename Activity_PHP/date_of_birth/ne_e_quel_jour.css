@@ -1,0 +1,12 @@
+body {
+    background-color: floralwhite;
+}
+
+h1,
+h2 {
+    color: blue;
+}
+
+.ne {
+    display: flex;
+}
