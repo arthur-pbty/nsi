@@ -1,3 +1,24 @@
+<?php
+$month = $_POST['month'];
+$year = $_POST['year']; 
+
+$months = [
+   1 => "January",
+   2 => "February",
+   3 => "March",
+   4 => "April",
+   5 => "May",
+   6 => "June",
+   7 => "July",
+   8 => "August",
+   9 => "September",
+   10 => "October",
+   11 => "November",
+   12 => "December"
+];
+
+$monthName = $months[$month];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,8 +32,8 @@
       <h1>Calendar</h1>
         <table>
             <tr>
-                <th>$month</th>
-                <th>$year</th>
+                <th><?php echo($monthName) ?></th>
+                <th><?php echo($year) ?></th>
             </tr>
             <tr>
                 <td>Monday</td>
@@ -25,8 +46,6 @@
             </tr>
             <tr>
                <?php 
-               $month = $_POST['month'];
-               $year = $_POST['year'];
                $nbr = 1;
                $nbrmax = 32;
 
