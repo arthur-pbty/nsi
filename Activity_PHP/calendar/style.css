@@ -37,6 +37,10 @@ header {
    color: #fff;
    text-align: center;
    padding: 1em 0;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
 }
 
 header h1 {
@@ -52,6 +56,10 @@ form label {
    margin-right: 10px;
 }
 
+.sup-callback {
+   width: 300px;
+}
+
 form input,
 form select {
    width: 100px;
@@ -59,12 +67,19 @@ form select {
    margin-right: 10px;
 }
 
-form button {
+button,
+a,
+.btn {
    padding: 7px 15px;
    background-color: #292929;
    color: #fff;
    border: none;
    cursor: pointer;
+   text-decoration: none;
+}
+
+.first-main {
+   margin-top: 150px;
 }
 
 main {
@@ -85,4 +100,8 @@ main h2 {
 
 main p {
    color: #555;
+}
+
+.main-calendar {
+   min-height: 500px;
 }

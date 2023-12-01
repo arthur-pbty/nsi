@@ -11,7 +11,7 @@
     <header>
         <h1>Calendar</h1>
         <form method="post" action="calendar.php">
-            <label for="">Month :</label>
+            <label for="month">Month :</label>
             <select name="month">
                 <?php
                 $months = [
@@ -36,7 +36,7 @@
                 ?>
             </select>
 
-            <label for="">Year :</label>
+            <label for="year">Year :</label>
             <select name="year">
             <?php
             for ($i = date("Y")-100; $i <= date("Y")+100; $i++) {
@@ -48,7 +48,7 @@
             <button type="submit">Validate</button>
         </form>
     </header>
-    <main>
+    <main class="first-main">
         <section>
             <h2>Welcome to the calendar generator</h2>
             <p>This site allows you to generate calendars for different months according to the year you specify. Enter the month and year in the form above and click on "Validate" to see the corresponding calendar.</p>
@@ -64,9 +64,9 @@
         </section>
     </main>
     <main>
-        <h2>Add a rappel :</h2>
+        <h2>Add a callback :</h2>
         <form method="post" action="create_rappel.php">
-            <label for="">Day :</label>
+            <label for="day">Day :</label>
             <select name="day">
                 <?php
                 for ($j = 1; $j <= 31; $j++) {
@@ -76,7 +76,7 @@
                 ?>
             </select>
 
-            <label for="">Month :</label>
+            <label for="month">Month :</label>
             <select name="month">
                 <?php
                 foreach ($months as $value => $label) {
@@ -86,7 +86,7 @@
                 ?>
             </select>
 
-            <label for="">Year :</label>
+            <label for="year">Year :</label>
             <select name="year">
                 <?php
                 for ($i = date("Y")-100; $i <= date("Y")+100; $i++) {
@@ -96,9 +96,32 @@
                 ?>
             </select>
 
-            <label for="rappel">Rappel :</label>
+            <label for="rappel">Callback :</label>
             <input type="text" name="rappel" required>
-            <button type="submit">Validate</button>
+            <button type="submit">add</button>
+        </form>
+    </main>
+    <main>
+        <h2>Delete a callback :</h2>
+        <form method="post" action="del_rappel.php">
+            <label for="callback">Callback :</label>
+            <select name="callback" class="sup-callback">
+                <?php
+                foreach ($_COOKIE as $nom_cookie => $valeur_cookie) {
+                    
+                    $cut = explode("-", $nom_cookie);
+   
+                    if (count($cut) >= 3) {
+                       $rappelday = $cut[0];
+                       $rappelmonth = $cut[1];
+                       $rappelyear = $cut[2];
+                    } else {}
+
+                    echo "<option value='$nom_cookie'>$rappelday/$rappelmonth/$rappelyear : $valeur_cookie</option>";
+                }
+                ?>
+            </select>
+            <button type="submit">Delete</button>
         </form>
     </main>
 </body>

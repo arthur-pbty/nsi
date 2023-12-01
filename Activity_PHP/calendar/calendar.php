@@ -29,7 +29,7 @@ $monthName = $months[$month];
    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-   <main>
+   <main class="main-calendar">
       <h1>Calendar</h1>
         <table>
             <tr>
@@ -126,8 +126,36 @@ $monthName = $months[$month];
                }
                ?>
             </tr>
-        </table>
-    </main>
-    <a href="index.php">back -></a>
+         </table>
+   </main>
+      <main>
+      <a href="index.php" class="a-back">back -></a>
+
+      <form id="formMois" method="post">
+         <input type="hidden" id="year" name="year" value="<?php echo $year; ?>">
+         <input type="hidden" id="month" name="month" value="<?php echo $month; ?>">
+
+         <input type="submit" onclick="updateMonth(-1)" value="<-" class="btn">
+         <input type="submit" onclick="updateMonth(1)" value="->" class="btn">
+      </form>
+   </main>
+
+   <script>
+   function updateMonth(offset) {
+      var month = parseInt(document.getElementById("month").value) + offset;
+      var year = parseInt(document.getElementById("year").value);
+      if (month === 0) {
+         month = 12;
+         year -= 1;
+      }
+      if (month === 13) {
+         month = 1;
+         year += 1;
+      }
+
+      document.getElementById("month").value = month;
+      document.getElementById("year").value = year;
+   }
+</script>
 </body>
 </html>
