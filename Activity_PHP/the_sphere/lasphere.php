@@ -1,27 +1,41 @@
-<!-- lasphere.php -->
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title> La sphere </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The sphere</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body bgcolor="yellow" text="blue">
-    <h1> <font color="black"> Calcul de l'aire de la surface ou du volume d'une sphere </font>   </h1>
-    <BR>
-    <img src="sphere.jpg"WIDTH=120 HEIGHT=86 TITLE="code Html" />    
-    <!-- edition du formulaire -->
-    <!-- Lors de sa validation par le clic sur le bouton "Envoyer" de type "submit",
-    les données sont envoyées au serveur par la methode POST pour etre exploitees
-    au sein de la page lasphere2.php -->
+<body>
+    <h1>Calculating the area, surface or volume of a sphere</h1>
+    <img src="sphere.jpg">
 
-    <form method="post" action="lasphere2.php">
-        <p>                
-        <input type="radio" name="sphere" value="aire" /> Aire                                                
-        <input type="radio" name="sphere" value="volume" checked="checked" /> Volume        
-        <BR>
-        Rayon en m: <input type="text" name="rayon"  />                                           
-        <input type="submit" value="Envoyer" />
+    <form method="post">
+        <label for="sphere">Area :</label>
+        <input type="radio" name="sphere" value="aire">
 
-        </p>
+        <label for="sphere">Volume :</label>
+        <input type="radio" name="sphere" value="aire" checked="checked">
+
+        <label for="rayon">Radius in m :</label>
+        <input type="number" name="rayon" required>
+
+        <button type="submit" name="submit">Validate</button>
     </form>
+    <div>
+        <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
+            if (strcmp($_POST['sphere'], "aire") == 0) {
+                $resultat = 4 * 3.14 * $_POST['rayon'] * $_POST['rayon'];
+                print ("Aire = $resultat m²");
+            }
+
+            if (strcmp($_POST['sphere'], "volume") == 0) {
+                $resultat = 4/3 * 3.14 * $_POST['rayon'] * $_POST['rayon'] * $_POST['rayon'];
+                print ("Volume = $resultat m3");
+            }
+        }
+        ?>
+    </div>
 </body>
 </html>
