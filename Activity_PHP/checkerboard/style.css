@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form input[type="number"],
+form button {
+    margin: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+}
+
+.n {
+    background-color: #000;
+}
+
+.b {
+    background-color: #fff;
+}
