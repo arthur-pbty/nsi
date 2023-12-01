@@ -2,12 +2,7 @@ table {
    margin-top: 30px;
    border-collapse: collapse;
    width: 100%;
-}
-
-th, td {
-   border: 1px solid #dddddd;
-   text-align: left;
-   padding: 8px;
+   table-layout:fixed;
 }
 
 th {
@@ -83,7 +78,7 @@ a,
 }
 
 main {
-   max-width: 800px;
+   max-width: 1000px;
    margin: 20px auto;
    padding: 20px;
    background-color: #fff;
@@ -104,4 +99,26 @@ main p {
 
 .main-calendar {
    min-height: 500px;
+}
+
+th,
+td {
+   text-align: center;
+   width: 100px; 
+   height: 50px;
+   transition: width 0.3s ease, height 0.3s ease;
+   cursor: pointer;
+   border: 1px solid #dddddd;
+   padding: 8px;
+}
+
+td {
+   overflow: hidden;
+   white-space:nowrap;
+   text-overflow: ellipsis;
+}
+
+.clicked {
+   height: auto; 
+   white-space:normal;
 }

@@ -18,6 +18,9 @@ $months = [
 ];
 
 $monthName = $months[$month];
+
+$data = json_decode(file_get_contents('data.json'), true);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,14 +40,19 @@ $monthName = $months[$month];
                 <th><?php echo($year) ?></th>
             </tr>
             <tr>
-                <td>Monday</td>
-                <td>Tuesday</td>
-                <td>Wednesday</td>
-                <td>Thursday</td>
-                <td>Friday</td>
-                <td>Saturday</td>
-                <td>Sunday</td>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
             </tr>
+            <script>
+            function agrandir(cellule) {
+               cellule.classList.toggle("clicked");
+            }
+            </script>
             <tr>
                <?php 
                $nbr = 1;
@@ -73,7 +81,14 @@ $monthName = $months[$month];
                }
                for ($i=6-$day; $i <7 ; $i++) { 
                   $today = (date("j") == $nbr and date("n") == $month and date("Y") == $year) ? "class='today'" : "";
-                  echo("<td $today>$nbr");
+                  echo("<td onclick='agrandir(this)' $today>$nbr");
+
+                  $date_table = $nbr."-".$month ;
+                  foreach ($data['dates'] as $date) {
+                     if ($date['date'] === $date_table) {
+                        echo "<br>" . $date['name']; 
+                     }
+                  }
 
                   foreach ($_COOKIE as $nom_cookie => $valeur_cookie) {
                      $cut = explode("-", $nom_cookie);
@@ -102,7 +117,14 @@ $monthName = $months[$month];
                      }
 
                      $today = (date("j") == $nbr and date("n") == $month and date("Y") == $year) ? "class='today'" : "";
-                     echo("<td $today>$nbr");
+                     echo("<td onclick='agrandir(this)' $today>$nbr");
+
+                     $date_table = $nbr."-".$month ;
+                     foreach ($data['dates'] as $date) {
+                        if ($date['date'] === $date_table) {
+                           echo "<br>" . $date['name']; 
+                        }
+                     }
 
                      foreach ($_COOKIE as $nom_cookie => $valeur_cookie) {
                         $cut = explode("-", $nom_cookie);

@@ -1,0 +1,48 @@
+{
+   "dates": [
+      {
+         "name": "Nouvel An",
+         "date": "1-1"
+      },
+      {
+         "name": "Saint-Valentin",
+         "date": "14-2"
+      },
+      {
+         "name": "Journée internationale des femmes",
+         "date": "8-3"
+      },
+      {
+         "name": "Poisson d'avril",
+         "date": "1-4"
+      },
+      {
+         "name": "Équinoxe de printemps (ou d'automne)",
+         "date": "21-3"
+      },
+      {
+         "name": "Fête du Travail",
+         "date": "1-5"
+      },
+      {
+         "name": "Noël",
+         "date": "25-12"
+      },
+      {
+         "name": "Saint-Sylvestre",
+         "date": "31-12"
+      },
+      {
+         "name": "Armistice",
+         "date": "11-11"
+      },
+      {
+         "name": "Fête nationale française",
+         "date": "14-7"
+      },
+      {
+         "name": "Journée mondiale de l'environnement",
+         "date": "5-6"
+      }
+   ]
+}
