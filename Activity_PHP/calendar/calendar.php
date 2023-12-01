@@ -72,7 +72,25 @@ $monthName = $months[$month];
                   echo("<td></td>");
                }
                for ($i=6-$day; $i <7 ; $i++) { 
-                  echo("<td>$nbr</td>");
+                  $today = (date("j") == $nbr and date("n") == $month and date("Y") == $year) ? "class='today'" : "";
+                  echo("<td $today>$nbr");
+
+                  foreach ($_COOKIE as $nom_cookie => $valeur_cookie) {
+                     $cut = explode("-", $nom_cookie);
+
+                     if (count($cut) >= 3) {
+                        $rappelday = $cut[0];
+                        $rappelmonth = $cut[1];
+                        $rappelyear = $cut[2];
+
+                        $rappel = ($rappelday == $nbr and $rappelmonth == $month and $rappelyear == $year) ? "<br>$valeur_cookie" : "";
+                     } else {
+                        $rappel = "error rappel";
+                     }
+                     echo($rappel);
+                  }
+
+                  echo("</td>");
                   $nbr++;
                }
                
@@ -84,8 +102,24 @@ $monthName = $months[$month];
                      }
 
                      $today = (date("j") == $nbr and date("n") == $month and date("Y") == $year) ? "class='today'" : "";
-                     
-                     echo("<td $today>$nbr</td>");
+                     echo("<td $today>$nbr");
+
+                     foreach ($_COOKIE as $nom_cookie => $valeur_cookie) {
+                        $cut = explode("-", $nom_cookie);
+   
+                        if (count($cut) >= 3) {
+                           $rappelday = $cut[0];
+                           $rappelmonth = $cut[1];
+                           $rappelyear = $cut[2];
+   
+                           $rappel = ($rappelday == $nbr and $rappelmonth == $month and $rappelyear == $year) ? "<br>$valeur_cookie" : "";
+                        } else {
+                           $rappel = "error rappel";
+                        }
+                        echo($rappel);
+                     }
+
+                     echo("</td>");
                      $nbr++;
                   }
                   echo("</tr>");
@@ -94,5 +128,6 @@ $monthName = $months[$month];
             </tr>
         </table>
     </main>
+    <a href="index.php">back -></a>
 </body>
 </html>

@@ -63,5 +63,43 @@
             <p>The calendar generated will display the days of the week as well as the dates for the selected month and year.</p>
         </section>
     </main>
+    <main>
+        <h2>Add a rappel :</h2>
+        <form method="post" action="create_rappel.php">
+            <label for="">Day :</label>
+            <select name="day">
+                <?php
+                for ($j = 1; $j <= 31; $j++) {
+                    $selected = ($j == date("d")) ? 'selected' : '';
+                    echo "<option value='$j' $selected>$j</option>";
+                }
+                ?>
+            </select>
+
+            <label for="">Month :</label>
+            <select name="month">
+                <?php
+                foreach ($months as $value => $label) {
+                    $selected = ($value == date("n")) ? 'selected' : '';
+                    echo "<option value='$value' $selected>$label</option>";
+                }
+                ?>
+            </select>
+
+            <label for="">Year :</label>
+            <select name="year">
+                <?php
+                for ($i = date("Y")-100; $i <= date("Y")+100; $i++) {
+                    $selected = ($i == date("Y")) ? 'selected' : '';
+                    echo "<option value='$i' $selected>$i</option>";
+                }
+                ?>
+            </select>
+
+            <label for="rappel">Rappel :</label>
+            <input type="text" name="rappel" required>
+            <button type="submit">Validate</button>
+        </form>
+    </main>
 </body>
 </html>
