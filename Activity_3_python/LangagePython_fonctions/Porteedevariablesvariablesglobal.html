@@ -1,0 +1,127 @@
+﻿
+
+<html>
+	
+<head>
+	<title>Port&eacute;e de variables: variables globales et locales</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 6.3.0.298">
+	<meta name="description" content="" /> 
+	<meta name="keywords" content="">
+	
+	
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Activite_decouverte_Python.hml?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Porteedevariablesvariablesglobal");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	
+</head>
+
+<body>
+
+
+
+	
+		<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Port&eacute;e de variables: variables globales et locales</h1>
+				
+				
+				<div id="topic_breadcrumb">
+					<a href="Lesfonctions.html">Les fonctions</a> &rsaquo;&rsaquo; 
+				</div>
+				
+			</div>
+			
+			<div id="topic_header_nav">
+				
+				
+				<a href="Lesfonctions.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				
+				
+				<a href="Exemplen6.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				
+				
+				<a href="Annexelacomprehensiondelistes.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+	
+	
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps7"><span class="rvts49">La&nbsp;</span><span class="rvts88">portée d'une variable</span><span class="rvts49">&nbsp;est l'endroit du programme où on peut accéder à la variable.</span></p>
+<p class="rvps7"><span class="rvts49">Observons le script suivant :</span></p>
+<p class="rvps8"><span class="rvts38">a = 10 &nbsp;</span><span class="rvts39"># variable globale au programme</span><br/><span class="rvts46">def</span><span class="rvts38">&nbsp;</span><span class="rvts41">mafonction</span><span class="rvts38">():</span><br/><span class="rvts38">&nbsp; &nbsp; a = 20 </span><span class="rvts39"># variable locale à la fonction</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts40">print</span><span class="rvts38">(a)</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts46">return</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(a) &nbsp;</span><span class="rvts39"># nous sommmes dans l'espace global du programme</span><br/><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;mafonction() </span><span class="rvts39"># nous sommes dans l'espace local de la fonction</span><br/><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(a) &nbsp;</span><span class="rvts39"># de retour dans l'espace global</span><br/><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps7"><span class="rvts11">Nous avons deux variables différentes qui portent le même nom&nbsp;</span><span class="rvts17">a</span></p>
+<p class="rvps7"><span class="rvts11">Une variable&nbsp;</span><span class="rvts17">a</span><span class="rvts11">&nbsp;de valeur 20 est créée dans la fonction : c'est une&nbsp;</span><span class="rvts43">variable locale</span><span class="rvts11">&nbsp;à la fonction.</span><br/><span class="rvts11">Elle est détruite dès que l'on sort de la fonction.</span></p>
+<h4 class="rvps13"><span class="rvts0"><span class="rvts80">global</span></span></h4>
+<p class="rvps7"><span class="rvts49">L'instruction&nbsp;</span><span class="rvts76">global</span><span class="rvts49">&nbsp;rend une variable globale :</span></p>
+<p class="rvps8"><span class="rvts38">a = 10 &nbsp;</span><span class="rvts39"># variable globale</span><br/><span class="rvts46">def</span><span class="rvts38">&nbsp;</span><span class="rvts41">mafonction</span><span class="rvts38">():</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts46">global</span><span class="rvts38">&nbsp;a </span><span class="rvts39"># la variable est maintenant globale</span><br/><span class="rvts38">&nbsp; &nbsp; a = 20</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts40">print</span><span class="rvts38">(a)</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts46">return</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(a)</span><br/><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;mafonction()</span><br/><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(a)</span><br/><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps7"><span class="rvts11">Remarque : il est préférable d'éviter l'utilisation de l'instruction&nbsp;</span><span class="rvts17">global</span><span class="rvts11">&nbsp;car c'est une source d'erreurs (on peut ainsi modifier le contenu d'une variable globale en croyant agir sur une variable locale).</span><br/><span class="rvts11">La sagesse recommande donc de suivre la règle suivante :</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: square;">
+<li class="rvps2"><span class="rvts11">ne jamais affecter dans un bloc de code local une variable de même nom qu'une variable globale</span></li>
+</ul>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts15">Créé avec HelpNDoc Personal Edition: </span><a class="rvts16" href="https://www.helpndoc.com/fr/outils-creation-aide">Environnement de création d'aide complet</a></p>
+
+	</div>
+	
+	
+		<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				
+			</div>
+		</div>
+	
+	
+
+	
+</body>
+	
+</html>
+

@@ -1,0 +1,122 @@
+﻿
+
+<html>
+	
+<head>
+	<title>Annexe: la compr&eacute;hension de listes</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 6.3.0.298">
+	<meta name="description" content="" /> 
+	<meta name="keywords" content="">
+	
+	
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Activite_decouverte_Python.hml?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Annexelacomprehensiondelistes");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	
+</head>
+
+<body>
+
+
+
+	
+		<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Annexe: la compr&eacute;hension de listes</h1>
+				
+				
+				<div id="topic_breadcrumb">
+					<a href="Lesfonctions.html">Les fonctions</a> &rsaquo;&rsaquo; 
+				</div>
+				
+			</div>
+			
+			<div id="topic_header_nav">
+				
+				
+				<a href="Lesfonctions.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				
+				
+				<a href="Porteedevariablesvariablesglobal.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				
+				
+				<a href="Exercices4.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+	
+	
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps7"><span class="rvts11">La&nbsp;</span><span class="rvts43">compréhension de listes</span><span class="rvts11">&nbsp;est une structure syntaxique disponible dans un certain nombre de langages de programmation, dont Python.</span><br/><span class="rvts11">C'est une manière de créer efficacement des listes.</span></p>
+<p class="rvps7"><span class="rvts11">Revenons sur l'exemple vu dans le script&nbsp;</span><span class="rvts17">Fonction5.py</span><span class="rvts11">&nbsp;:</span></p>
+<p class="rvps8"><span class="rvts38">resultat&nbsp;=&nbsp;[random.randint(1,6)&nbsp;</span><span class="rvts46">for&nbsp;</span><span class="rvts38">i&nbsp;</span><span class="rvts46">in&nbsp;</span><span class="rvts89">range</span><span class="rvts38">(10)]</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(resultat)</span><br/><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<h4 class="rvps13"><span class="rvts0"><span class="rvts59">Autre exemple : liste de carrés</span></span></h4>
+<p class="rvps8"><span class="rvts38">carres&nbsp;=&nbsp;[i*i&nbsp;</span><span class="rvts46">for&nbsp;</span><span class="rvts38">i&nbsp;</span><span class="rvts46">in&nbsp;</span><span class="rvts89">range</span><span class="rvts38">(11)]</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(carres)</span><br/><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps7"><span class="rvts49">La compréhension de listes évite donc d'écrire le code "classique" suivant :</span></p>
+<p class="rvps8"><span class="rvts38">carres&nbsp;=&nbsp;[]</span><br/><span class="rvts46">for&nbsp;</span><span class="rvts38">i&nbsp;</span><span class="rvts46">in&nbsp;</span><span class="rvts89">range</span><span class="rvts38">(11):</span><br/><span class="rvts38">&nbsp;&nbsp;&nbsp;&nbsp;carres.append(i*i)</span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts15">Créé avec HelpNDoc Personal Edition: </span><a class="rvts16" href="https://www.helpndoc.com/fr/tour-des-fonctionnalites/creez-des-fichiers-daide-pour-le-framework-qt-help">Créer des fichiers d'aide pour la plateforme Qt Help</a></p>
+
+	</div>
+	
+	
+		<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				
+			</div>
+		</div>
+	
+	
+
+	
+</body>
+	
+</html>
+

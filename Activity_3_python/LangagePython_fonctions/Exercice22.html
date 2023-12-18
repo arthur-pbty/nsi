@@ -1,0 +1,117 @@
+﻿
+
+<html>
+	
+<head>
+	<title>Exercice 2.2</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 6.3.0.298">
+	<meta name="description" content="" /> 
+	<meta name="keywords" content="">
+	
+	
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Activite_decouverte_Python.hml?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Exercice22");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	
+</head>
+
+<body>
+
+
+
+	
+		<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Exercice 2.2</h1>
+				
+				
+				<div id="topic_breadcrumb">
+					<a href="Lesconditionsinstructionsifelife.html">Les conditions (instructions if, elif, else)</a> &rsaquo;&rsaquo; <a href="Exercices2.html">Exercices 2</a> &rsaquo;&rsaquo; 
+				</div>
+				
+			</div>
+			
+			<div id="topic_header_nav">
+				
+				
+				<a href="Exercices2.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				
+				
+				<a href="Exercice21.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				
+				
+				<a href="Exercice23.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+	
+	
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps7"><span class="rvts60">★</span><span class="rvts49">&nbsp;</span><span class="rvts78">Nombre entier non signé et signé</span><br/><span class="rvts49">Dans un octet, on peut stocker un nombre entier compris entre 0b00000000 = 0 et 0b11111111 = 255 (entier non signé, en numération binaire naturel).</span><br/><span class="rvts49">On peut aussi stocker un entier compris entre -128 et +127 (entier signé, représentation dite en complément à deux).</span><br/><span class="rvts49">En complément à deux, les nombres négatifs sont codés de la manière suivante :</span><br/><span class="rvts49">-1 correspond à 255 en binaire naturel</span><br/><span class="rvts49">-2 correspond à 254 en binaire naturel</span><br/><span class="rvts49">...</span><br/><span class="rvts49">-127 correspond à 129 en binaire naturel</span><br/><span class="rvts49">-128 correspond à 128 en binaire naturel</span><br/><span class="rvts49">1) Ecrire un script qui donne la correspondance entre entier signé et entier non signé.</span><br/><span class="rvts49">Par exemple :</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><br/><span class="rvts41">Entrer un entier signé en complément à deux (-128 à +127):</span><span class="rvts38">&nbsp;25</span><br/><span class="rvts41">La représentation en binaire naturel est : 25</span><br/><span class="rvts37">&gt;&gt;&gt;</span><br/><span class="rvts41">Entrer un entier signé en complément à deux (-128 à +127):</span><span class="rvts38">&nbsp;-15</span><br/><span class="rvts41">La représentation en binaire naturel est : 241</span></p>
+<p class="rvps7"><span class="rvts49">2) Ecrire un script qui donne la correspondance entre entier non signé et entier signé.</span><br/><span class="rvts49">Par exemple :</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><br/><span class="rvts41">Entrer un nombre entier (0 à 255):</span><span class="rvts38">&nbsp;250</span><br/><span class="rvts41">Cela représente l'entier signé : -6</span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts15">Créé avec HelpNDoc Personal Edition: </span><a class="rvts16" href="https://www.helpndoc.com/fr/tour-des-fonctionnalites">Créer des livres électroniques facilement</a></p>
+
+	</div>
+	
+	
+		<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				
+			</div>
+		</div>
+	
+	
+
+	
+</body>
+	
+</html>
+

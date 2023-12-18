@@ -1,0 +1,129 @@
+﻿
+
+<html>
+	
+<head>
+	<title>L'instruction elif</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 6.3.0.298">
+	<meta name="description" content="" /> 
+	<meta name="keywords" content="">
+	
+	
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Activite_decouverte_Python.hml?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Linstructionelif");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	
+</head>
+
+<body>
+
+
+
+	
+		<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">L'instruction elif</h1>
+				
+				
+				<div id="topic_breadcrumb">
+					<a href="Lesconditionsinstructionsifelife.html">Les conditions (instructions if, elif, else)</a> &rsaquo;&rsaquo; 
+				</div>
+				
+			</div>
+			
+			<div id="topic_header_nav">
+				
+				
+				<a href="Lesconditionsinstructionsifelife.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				
+				
+				<a href="Linstructionelse.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				
+				
+				<a href="Exercices2.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+	
+	
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps7"><span class="rvts11">Une instruction&nbsp;</span><span class="rvts17">elif</span><span class="rvts11">&nbsp;(contraction de </span><span class="rvts12">else if</span><span class="rvts11">) est toujours associée à une instruction&nbsp;</span><span class="rvts17">if</span></p>
+<h4 class="rvps13"><span class="rvts0"><span class="rvts59">Syntaxe</span></span></h4>
+<p class="rvps8"><span class="rvts46">if</span><span class="rvts38">&nbsp;expression 1:</span><br/><span class="rvts75">&nbsp; &nbsp; </span><span class="rvts38">bloc d'instructions 1</span><br/><span class="rvts46">elif</span><span class="rvts38">&nbsp;expression 2:</span><br/><span class="rvts75">&nbsp; &nbsp; </span><span class="rvts38">bloc d'instructions 2</span><br/><span class="rvts46">elif</span><span class="rvts38">&nbsp;expression 3:</span><br/><span class="rvts75">&nbsp; &nbsp; </span><span class="rvts38">bloc d'instructions 3 </span><span class="rvts39"># ici deux instructions elif, mais il n'y a pas de limitation</span><br/><span class="rvts46">else</span><span class="rvts38">:</span><br/><span class="rvts75">&nbsp; &nbsp; </span><span class="rvts38">bloc d'instructions 4</span><br/><span class="rvts39"># suite du programme</span></p>
+<p class="rvps7"><span class="rvts25">Si l'expression 1 est vraie alors le bloc d'instructions 1 est exécuté, et on passe à la suite du programme.</span><br/><span class="rvts25">Si l'expression 1 est fausse alors on teste l'expression 2 :</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: square;">
+<li class="rvps2"><span class="rvts25">si l'expression 2 est vraie on exécute le bloc d'instructions 2, et on passe à la suite du programme.</span></li>
+<li class="rvps2"><span class="rvts25">si l'expression 2 est fausse alors on teste l'expression 3, etc.</span></li>
+</ul>
+<p class="rvps7"><span class="rvts25">Le bloc d'instructions 4 est donc exécuté si toutes les expressions sont fausses (c'est le bloc "par défaut").</span></p>
+<p class="rvps7"><span class="rvts25">Parfois il n'y a rien à faire.</span><br/><span class="rvts25">Dans ce cas, on peut omettre l'instruction&nbsp;</span><span class="rvts32">else</span><span class="rvts25">:</span></p>
+<p class="rvps8"><span class="rvts46">if</span><span class="rvts38">&nbsp;expression 1:</span><br/><span class="rvts75">&nbsp; &nbsp; </span><span class="rvts38">bloc d'instructions 1</span><br/><span class="rvts46">elif</span><span class="rvts38">&nbsp;expression 2:</span><br/><span class="rvts75">&nbsp; &nbsp; </span><span class="rvts38">bloc d'instructions 2</span><br/><span class="rvts46">elif</span><span class="rvts38">&nbsp;expression 3:</span><br/><span class="rvts75">&nbsp; &nbsp; </span><span class="rvts38">bloc d'instructions 3</span><br/><span class="rvts39"># suite du programme</span></p>
+<p class="rvps7"><span class="rvts25">L'instruction&nbsp;</span><span class="rvts32">elif</span><span class="rvts25">&nbsp;évite souvent l'utilisation de conditions imbriquées (et souvent compliquées).</span></p>
+<h4 class="rvps13"><span class="rvts0"><span class="rvts59">Exemple</span></span></h4>
+<p class="rvps8"><span class="rvts39"># script Condition5.py</span><br/><span class="rvts39"># ce script fait la même chose que Condition4.py</span><br/><span class="rvts38">note = </span><span class="rvts40">float</span><span class="rvts38">(</span><span class="rvts40">input</span><span class="rvts38">(</span><span class="rvts52">"Note sur 20 : "</span><span class="rvts38">))</span><br/><span class="rvts46">if</span><span class="rvts38">&nbsp;note == 0.0:</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts40">print</span><span class="rvts52">("C'est en dessous de la moyenne")</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts40">print</span><span class="rvts52">("... lamentable !")</span><br/><span class="rvts46">elif</span><span class="rvts38">&nbsp;note == 20.0:</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts40">print</span><span class="rvts52">("J'ai la moyenne")</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts40">print</span><span class="rvts52">("C'est même excellent !")</span><br/><span class="rvts46">elif</span><span class="rvts38">&nbsp;note &lt; 10.0 </span><span class="rvts46">and</span><span class="rvts38">&nbsp;note &gt; 0.0: </span><span class="rvts39"># ou bien : elif 0.0 &lt; note &lt; 10.0:</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts40">print</span><span class="rvts52">("C'est en dessous de la moyenne")</span><br/><span class="rvts46">elif</span><span class="rvts38">&nbsp;note &gt;= 10.0 </span><span class="rvts46">and</span><span class="rvts38">&nbsp;note &lt; 20.0: </span><span class="rvts39"># ou bien : elif 10.0 &lt;= note &lt; 20.0:</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts40">print</span><span class="rvts52">("J'ai la moyenne")</span><br/><span class="rvts46">else</span><span class="rvts38">:</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts40">print</span><span class="rvts52">("Note invalide !")</span><br/><span class="rvts40">print</span><span class="rvts52">("Fin du programme") </span></p>
+<p class="rvps8"><span class="rvts52">Exécuter </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><span class="rvts52">&nbsp;et tester</span></p>
+<h3 class="rvps12"><span class="rvts0"><span class="rvts37"><br/></span></span></h3>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts15">Créé avec HelpNDoc Personal Edition: </span><a class="rvts16" href="https://www.helpndoc.com/fr">Générateur de documentation complet</a></p>
+
+	</div>
+	
+	
+		<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				
+			</div>
+		</div>
+	
+	
+
+	
+</body>
+	
+</html>
+

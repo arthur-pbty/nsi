@@ -1,0 +1,134 @@
+﻿
+
+<html>
+	
+<head>
+	<title>Le type str (string : cha&icirc;ne de caract&egrave;res)</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 6.3.0.298">
+	<meta name="description" content="" /> 
+	<meta name="keywords" content="">
+	
+	
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Activite_decouverte_Python.hml?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Letypestrstringchainedecaractere");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	
+</head>
+
+<body>
+
+
+
+	
+		<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Le type str (string : cha&icirc;ne de caract&egrave;res)</h1>
+				
+				
+				<div id="topic_breadcrumb">
+					<a href="Variablestypesetoperateurs.html">Variables, types et op&eacute;rateurs</a> &rsaquo;&rsaquo; 
+				</div>
+				
+			</div>
+			
+			<div id="topic_header_nav">
+				
+				
+				<a href="Variablestypesetoperateurs.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				
+				
+				<a href="Lesfonctionsmathematiques.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				
+				
+				<a href="Letypelistliste.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+	
+	
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;nom = </span><span class="rvts52">'Dupont'</span><span class="rvts38">&nbsp; </span><span class="rvts39"># entre apostrophes</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(nom) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(</span><span class="rvts40">type</span><span class="rvts38">(nom)) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;prenom = </span><span class="rvts52">"Pierre"</span><span class="rvts38">&nbsp; </span><span class="rvts39"># on peut aussi utiliser les guillemets</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(prenom) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(nom, prenom) &nbsp;</span><span class="rvts39"># ne pas oublier la virgule </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"><br/></span></p>
+<p class="rvps7"><span class="rvts54">La concaténation désigne la mise bout à bout de plusieurs chaînes de caractères.</span><br/><span class="rvts54">La concaténation utilise l'opérateur&nbsp;</span><span class="rvts55">+</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;chaine = nom + prenom </span><span class="rvts39"># concaténation de deux chaînes de caractères</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(chaine) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;chaine = prenom + nom </span><span class="rvts39"># concaténation de deux chaînes de caractères</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(chaine) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;chaine = prenom + </span><span class="rvts52">' '</span><span class="rvts38">&nbsp;+ nom</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(chaine) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;chaine = chaine + </span><span class="rvts52">' 18 ans'</span><span class="rvts38">&nbsp;</span><span class="rvts39"># en plus court : chaine += ' 18 ans'</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(chaine) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"><br/></span></p>
+<p class="rvps7"><span class="rvts54">La fonction&nbsp;</span><span class="rvts55">len()</span><span class="rvts54">&nbsp;retourne la longueur (length) de la chaîne de caractères :</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(</span><span class="rvts40">len</span><span class="rvts38">(chaine)) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps7"><span class="rvts54">Indexage et slicing :</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(chaine[0]) &nbsp;</span><span class="rvts39"># premier caractère (indice 0) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(chaine[1]) </span><span class="rvts39"># deuxième caractère (indice 1) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(chaine[1:4]) </span><span class="rvts39"># slicing </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(chaine[2:]) </span><span class="rvts39"># slicing </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(chaine[-1]) </span><span class="rvts39"># dernier caractère (indice -1) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(chaine[-6:]) </span><span class="rvts39"># slicing </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"><br/></span></p>
+<p class="rvps7"><span class="rvts54">En résumé :</span></p>
+<p class="rvps8"><span class="rvts38">&nbsp;+---+---+---+---+---+---+</span><br/><span class="rvts38">&nbsp;| M | u | r | i | e | l |</span><br/><span class="rvts38">&nbsp;+---+---+---+---+---+---+</span><br/><span class="rvts38">&nbsp;0 &nbsp; 1 &nbsp; 2 &nbsp; 3 &nbsp; 4 &nbsp; 5 &nbsp; 6</span><br/><span class="rvts38">-6 &nbsp;-5 &nbsp;-4 &nbsp;-3 &nbsp;-2 &nbsp;-1</span></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;chaine = </span><span class="rvts52">'Aujourd'</span><span class="rvts53">hui</span><span class="rvts52">'</span><br/><span class="rvts48">SyntaxError: invalid syntax</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;chaine &nbsp;= </span><span class="rvts52">'Aujourd\'hui'</span><span class="rvts38">&nbsp; </span><span class="rvts39"># séquence d'échappement \'</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(chaine) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;chaine &nbsp;= </span><span class="rvts52">"Aujourd'hui"</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(chaine) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps7"><span class="rvts54">La séquence d'échappement&nbsp;</span><span class="rvts55">\n</span><span class="rvts54">&nbsp;représente un saut ligne :</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;chaine = </span><span class="rvts52">'Première ligne\nDeuxième ligne'</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(chaine) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps7"><span class="rvts54">Plus simplement, on peut utiliser les triples guillemets (ou les triples apostrophes) pour encadrer une chaîne définie sur plusieurs lignes :</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;chaine = </span><span class="rvts52">"""Première ligne</span><br/><span class="rvts52">Deuxième ligne"""</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(chaine) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps7"><span class="rvts54">On ne peut pas mélanger les serviettes et les torchons (ici type&nbsp;</span><span class="rvts55">str</span><span class="rvts54">&nbsp;et type&nbsp;</span><span class="rvts55">int</span><span class="rvts54">) :</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;chaine = </span><span class="rvts52">'17.45'</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(</span><span class="rvts40">type</span><span class="rvts38">(chaine)) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;chaine = chaine + 2 </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps7"><span class="rvts11">La fonction&nbsp;</span><span class="rvts17">float()</span><span class="rvts11">&nbsp;permet de convertir un type&nbsp;</span><span class="rvts17">str</span><span class="rvts11">&nbsp;en type&nbsp;</span><span class="rvts17">float</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;nombre = </span><span class="rvts40">float</span><span class="rvts38">(chaine)</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(nombre) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(</span><span class="rvts40">type</span><span class="rvts38">(nombre)) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;nombre = nombre + 2 &nbsp;</span><span class="rvts39"># en plus court : nombre += 2</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(nombre) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"><br/></span></p>
+<p class="rvps7"><span class="rvts54">La fonction&nbsp;</span><span class="rvts55">input()</span><span class="rvts54">&nbsp;lance une invite de commande (en anglais : prompt) pour saisir une chaîne de caractères.</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts39"># saisir une chaîne de caractères et valider avec la touche Enter</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;chaine = </span><span class="rvts40">input</span><span class="rvts38">(</span><span class="rvts52">"Entrer un nombre : "</span><span class="rvts38">) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41">Entrer un nombre :</span><span class="rvts38">&nbsp;14.56</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(chaine) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(</span><span class="rvts40">type</span><span class="rvts38">(chaine)) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;nombre = </span><span class="rvts40">float</span><span class="rvts38">(chaine) </span><span class="rvts39"># conversion de type</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(nombre**2) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"><br/></span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts15">Créé avec HelpNDoc Personal Edition: </span><a class="rvts16" href="https://www.helpndoc.com/fr">Générateur facile de livres électroniques et documentation</a></p>
+
+	</div>
+	
+	
+		<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				
+			</div>
+		</div>
+	
+	
+
+	
+</body>
+	
+</html>
+

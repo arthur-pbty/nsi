@@ -1,0 +1,171 @@
+﻿
+
+<html>
+	
+<head>
+	<title>Immuable vs mutable</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 6.3.0.298">
+	<meta name="description" content="" /> 
+	<meta name="keywords" content="">
+	
+	
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Activite_decouverte_Python.hml?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Immuablevsmutable");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	
+</head>
+
+<body>
+
+
+
+	
+		<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Immuable vs mutable</h1>
+				
+				
+				<div id="topic_breadcrumb">
+					<a href="Variablestypesetoperateurs.html">Variables, types et op&eacute;rateurs</a> &rsaquo;&rsaquo; 
+				</div>
+				
+			</div>
+			
+			<div id="topic_header_nav">
+				
+				
+				<a href="Variablestypesetoperateurs.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				
+				
+				<a href="ProgrammationOrienteeObjetPOO.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				
+				
+				<a href="Exercices1.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+	
+	
+	<div id="topic_content">
+		
+<p></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts64">Immuable ou immuable</span></li>
+</ul>
+<p class="rvps2"><span class="rvts25">Les </span><span class="rvts35">nombres </span><span class="rvts25">sont des </span><span class="rvts35">types immuables</span><span class="rvts25">&nbsp;tout comme les </span><span class="rvts35">chaînes de caractères</span><span class="rvts25">&nbsp;et les </span><span class="rvts35">tuples</span><span class="rvts25">&nbsp;(tableaux d’objets). </span></p>
+<p class="rvps2"><span class="rvts25">Une variable de type immuable ne peut être modifiée. Une opération sur une variable de ce type entraîne nécessairement la création d’une autre variable du même type.</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Pour mettre en évidence cette propriété, jouons avec la fonction </span><span class="rvts35">id()</span><span class="rvts25">&nbsp;qui renvoie l'identificateur unique d'un objet, cela correspond à l'adresse mémoire dans laquelle il est stocké. </span></p>
+<p class="rvps2"><span class="rvts25">Si l'identifiant est le même, c'est le même objet.</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts11">Vous allez vérifier cela dans la Console Python (interpréteur Python en mode interactif) </span></p>
+<p class="rvps2"><span class="rvts64"><br/></span></p>
+<p class="rvps10"><span class="rvts63">&gt;&gt;&gt; a = 1</span><br/><span class="rvts63">&gt;&gt;&gt; id(a)</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps10"><span class="rvts63">&gt;&gt;&gt; a += 2</span><br/><span class="rvts63">&gt;&gt;&gt; print(a)</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps10"><span class="rvts63">&gt;&gt;&gt; id(a)</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps10"><span class="rvts63">&gt;&gt;&gt; b = a</span><br/><span class="rvts63">&gt;&gt;&gt; id(b)</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Donner plusieurs noms à un même objet s'appelle l'</span><span class="rvts35">aliasing, </span><span class="rvts25">les variables </span><span class="rvts35">a</span><span class="rvts25">&nbsp;et </span><span class="rvts35">b</span><span class="rvts25">&nbsp;sont des</span><span class="rvts35">&nbsp;alias </span><span class="rvts25">l'une de l'autre. </span><span class="rvts35">a</span><span class="rvts25">&nbsp;et </span><span class="rvts35">b</span><span class="rvts25">&nbsp;pointent vers le même emplacement mémoire</span></p>
+<p class="rvps2"><span class="rvts35"><br/></span></p>
+<p class="rvps10"><span class="rvts63">&gt;&gt;&gt; b = 5</span><br/><span class="rvts63">&gt;&gt;&gt; a</span></p>
+<p class="rvps2"><span class="rvts35"><br/></span></p>
+<p class="rvps10"><span class="rvts63">&gt;&gt;&gt; b</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps10"><span class="rvts63">&gt;&gt;&gt; id(a)</span></p>
+<p class="rvps2"><span class="rvts64"><br/></span></p>
+<p class="rvps10"><span class="rvts63">&gt;&gt;&gt; id(a)</span></p>
+<p class="rvps2"><span class="rvts64"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Conclusion, l'aliasing se fait sans risque.</span></p>
+<p class="rvps2"><span class="rvts64"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts64">Mutable</span></li>
+</ul>
+<p class="rvps2"><span class="rvts25">Un objet de type </span><span class="rvts35">mutable</span><span class="rvts25">&nbsp;peut être modifié et modifié in situ. Aucune copie implicite n'est faite.</span></p>
+<p class="rvps2"><span class="rvts25">Cette catégorie comprend: les </span><span class="rvts35">listes</span><span class="rvts25">, les </span><span class="rvts35">dictionnaires</span><span class="rvts25">, ...</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps10"><span class="rvts63">&gt;&gt;&gt; liste1 = []</span><br/><span class="rvts63">&gt;&gt;&gt; id(liste1)</span></p>
+<p class="rvps2"><span class="rvts64"><br/></span></p>
+<p class="rvps10"><span class="rvts63">&gt;&gt;&gt; liste1.append('Nicolas')</span><br/><span class="rvts63">&gt;&gt;&gt; liste1</span></p>
+<p class="rvps2"><span class="rvts64"><br/></span></p>
+<p class="rvps10"><span class="rvts63">&gt;&gt;&gt; id(liste1)</span></p>
+<p class="rvps2"><span class="rvts64"><br/></span></p>
+<p class="rvps2"><span class="rvts25">La valeur de liste peut être modifié mais liste ne change pas d'id.</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Si un objet doit être souvent modifié, un type mutable est préférable qu'un type immuable d'un point de vue espace mémoire mais attention à l'aliasing par exemple:</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps10"><span class="rvts63">&gt;&gt;&gt; liste2 = liste1</span><br/><span class="rvts63">&gt;&gt;&gt; id(liste2)</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps10"><span class="rvts63">&gt;&gt;&gt; liste2.append(3)</span><br/><span class="rvts63">&gt;&gt;&gt; liste2</span></p>
+<p class="rvps10"><span class="rvts63">&gt;&gt;&gt; liste1</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts15">Créé avec HelpNDoc Personal Edition: </span><a class="rvts16" href="https://www.helpndoc.com/fr">Générateur de documentation complet</a></p>
+
+	</div>
+	
+	
+		<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				
+			</div>
+		</div>
+	
+	
+
+	
+</body>
+	
+</html>
+

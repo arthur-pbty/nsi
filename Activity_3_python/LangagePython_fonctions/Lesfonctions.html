@@ -1,0 +1,114 @@
+﻿
+
+<html>
+	
+<head>
+	<title>Les fonctions</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 6.3.0.298">
+	<meta name="description" content="" /> 
+	<meta name="keywords" content="">
+	
+	
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Activite_decouverte_Python.hml?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Lesfonctions");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	
+</head>
+
+<body>
+
+
+
+	
+		<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Les fonctions</h1>
+				
+				
+			</div>
+			
+			<div id="topic_header_nav">
+				
+				
+				<a href="Exercice39.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				
+				
+				<a href="Linstructiondef.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+	
+	
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps7"><span class="rvts11">Nous avons déjà vu beaucoup de fonctions :&nbsp;</span><span class="rvts17">print()</span><span class="rvts66">, </span><span class="rvts17">type()</span><span class="rvts66">, </span><span class="rvts17">len()</span><span class="rvts66">, </span><span class="rvts17">input()</span><span class="rvts66">, </span><span class="rvts17">range()</span><span class="rvts11">...</span><br/><span class="rvts11">Ce sont des fonctions pré-définies (</span><a class="rvts83" href="http://docs.python.org/3/library/functions.html">built-in functions</a><span class="rvts11">).</span><br/><span class="rvts11">Nous avons aussi la possibilité de créer nos propres fonctions !</span></p>
+<h3 class="rvps12"><span class="rvts0"><span class="rvts74">Intérêt des fonctions</span></span></h3>
+<p class="rvps7"><span class="rvts11">Une fonction est une portion de code que l'on peut appeler au besoin (c'est une sorte de sous-programme).</span></p>
+<p class="rvps7"><span class="rvts11">L'utilisation des fonctions évite des redondances dans le code : on obtient ainsi des programmes plus courts et plus lisibles.</span></p>
+<p class="rvps7"><span class="rvts11">Par exemple, nous avons besoin de convertir à plusieurs reprises des degrés Celsius en degrés Fahrenheit :</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(100.0*9.0/5.0 + 32.0)</span><br/><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(37.0*9.0/5.0 + 32.0)</span><br/><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(233.0*9.0/5.0 + 32.0)</span><br/><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps7"><span class="rvts11">La même chose en utilisant une fonction :</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts46">def</span><span class="rvts38">&nbsp;</span><span class="rvts41">fahrenheit</span><span class="rvts38">(degre_celsius):</span><br/><span class="rvts38">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts52">""" Conversion degré Celsius en degré Fahrenheit """</span><br/><span class="rvts38">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts40">print</span><span class="rvts38">(degre_celsius*9.0/5.0 + 32.0)</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;fahrenheit(100)</span><br/><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;fahrenheit(37)</span><br/><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;temperature = 233</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;fahrenheit(temperature)</span><br/><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps7"><span class="rvts11">Rien ne vous oblige à définir des fonctions dans vos scripts, mais cela est tellement pratique qu'il serait improductif de s'en passer !</span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts15">Créé avec HelpNDoc Personal Edition: </span><a class="rvts16" href="https://www.helpndoc.com/fr">Générateur de documentation et EPub gratuit</a></p>
+
+	</div>
+	
+	
+		<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				
+			</div>
+		</div>
+	
+	
+
+	
+</body>
+	
+</html>
+

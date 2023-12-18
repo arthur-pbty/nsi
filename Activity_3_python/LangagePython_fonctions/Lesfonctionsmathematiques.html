@@ -1,0 +1,128 @@
+﻿
+
+<html>
+	
+<head>
+	<title>Les fonctions math&eacute;matiques</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 6.3.0.298">
+	<meta name="description" content="" /> 
+	<meta name="keywords" content="">
+	
+	
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Activite_decouverte_Python.hml?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Lesfonctionsmathematiques");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	
+</head>
+
+<body>
+
+
+
+	
+		<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Les fonctions math&eacute;matiques</h1>
+				
+				
+				<div id="topic_breadcrumb">
+					<a href="Variablestypesetoperateurs.html">Variables, types et op&eacute;rateurs</a> &rsaquo;&rsaquo; 
+				</div>
+				
+			</div>
+			
+			<div id="topic_header_nav">
+				
+				
+				<a href="Variablestypesetoperateurs.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				
+				
+				<a href="Letypefloatnombresenvirguleflott.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				
+				
+				<a href="Letypestrstringchainedecaractere.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+	
+	
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps7"><span class="rvts25">Sous Python, pour utiliser les fonctions mathématiques, il faut commencer par importer le module&nbsp;</span><span class="rvts32">math</span><span class="rvts25">&nbsp;:</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts46">import</span><span class="rvts38">&nbsp;math</span></p>
+<p class="rvps7"><span class="rvts25">Sous l'IDLE (Python GUI), la fonction&nbsp;</span><span class="rvts32">dir()</span><span class="rvts25">&nbsp;retourne la liste des fonctions et données d'un module :</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">dir</span><span class="rvts38">(math)</span><br/><span class="rvts41">['__doc__', '__name__', '__package__', 'acos', 'acosh', 'asin', 'asinh', 'atan',</span><br/><span class="rvts41">'atan2', 'atanh', 'ceil', 'copysign', 'cos', 'cosh', 'degrees', 'e', 'erf',</span><br/><span class="rvts41">'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum',</span><br/><span class="rvts41">'gamma', 'hypot', 'isinf', 'isnan', 'ldexp', 'lgamma', 'log', 'log10', 'log1p',</span><br/><span class="rvts41">'modf', 'pi', 'pow', 'radians', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'trunc']</span></p>
+<p class="rvps7"><span class="rvts25">Sous Edupython, vous trouverez la liste des fonctions dans l'onglet du bas nommé </span><span class="rvts50">Variables</span></p>
+<p class="rvps7"><img alt="" style="padding : 1px;" src="lib/NouvelElement8.png"></p>
+<p class="rvps7"><span class="rvts49">Pour appeler une fonction d'un module, la syntaxe est la suivante :</span><br/><span class="rvts47">module.fonction(arguments)</span></p>
+<p class="rvps7"><span class="rvts49">Pour accéder à une donnée d'un module :</span><br/><span class="rvts47">module.data</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(math.pi) &nbsp;</span><span class="rvts39"># donnée pi du module math (nombre pi) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(math.sin(math.pi/4.0)) </span><span class="rvts39"># fonction sin() du module math (sinus) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(math.sqrt(2.0)) &nbsp;</span><span class="rvts39"># fonction sqrt() du module math (racine carrée) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(math.sqrt(-5.0)) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts48"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(math.exp(-3.0)) &nbsp;</span><span class="rvts39"># fonction exp() du module math (exponentielle) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(math.log(math.e)) &nbsp;</span><span class="rvts39"># fonction log() du module math (logarithme népérien) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps9"><span class="rvts25">Pour simplifier, vous pouvez importer toutes les fonctions d'un module :</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts41">from</span><span class="rvts40">&nbsp;</span><span class="rvts51">math</span><span class="rvts40">&nbsp;</span><span class="rvts41">import</span><span class="rvts40">&nbsp;*</span></p>
+<p class="rvps9"><img alt="" style="padding : 1px;" src="lib/NouvelElement12.png"></p>
+<p class="rvps9"><span class="rvts25">Vous devez privilégier uniquement l'importation des fonctions que vous souhaitez utiliser:</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts41">from</span><span class="rvts40">&nbsp;</span><span class="rvts51">math</span><span class="rvts40">&nbsp;</span><span class="rvts41">import</span><span class="rvts40">&nbsp;pi</span></p>
+<p class="rvps9"><span class="rvts25">&nbsp;</span><a class="rvts14" href="http://download.tuxfamily.org/edupython/videos/module/module.html" target="_blank">Utilisation d'un module en Python (vidéo)</a></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts15">Créé avec HelpNDoc Personal Edition: </span><a class="rvts16" href="https://www.helpndoc.com/fr">Générateur de documentations PDF gratuit</a></p>
+
+	</div>
+	
+	
+		<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				
+			</div>
+		</div>
+	
+	
+
+	
+</body>
+	
+</html>
+

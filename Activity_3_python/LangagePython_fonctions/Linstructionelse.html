@@ -1,0 +1,125 @@
+﻿
+
+<html>
+	
+<head>
+	<title>L'instruction else</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 6.3.0.298">
+	<meta name="description" content="" /> 
+	<meta name="keywords" content="">
+	
+	
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Activite_decouverte_Python.hml?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Linstructionelse");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	
+</head>
+
+<body>
+
+
+
+	
+		<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">L'instruction else</h1>
+				
+				
+				<div id="topic_breadcrumb">
+					<a href="Lesconditionsinstructionsifelife.html">Les conditions (instructions if, elif, else)</a> &rsaquo;&rsaquo; 
+				</div>
+				
+			</div>
+			
+			<div id="topic_header_nav">
+				
+				
+				<a href="Lesconditionsinstructionsifelife.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				
+				
+				<a href="Linstructionif.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				
+				
+				<a href="Linstructionelif.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+	
+	
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps7"><span class="rvts11">Une instruction&nbsp;</span><span class="rvts17">else</span><span class="rvts11">&nbsp;est toujours associée à une instruction&nbsp;</span><span class="rvts17">if</span></p>
+<h4 class="rvps13"><span class="rvts0"><span class="rvts59">Syntaxe</span></span></h4>
+<p class="rvps8"><span class="rvts46">if</span><span class="rvts38">&nbsp;expression:</span><br/><span class="rvts75">&nbsp; &nbsp; </span><span class="rvts38">bloc d'instructions 1 &nbsp;</span><span class="rvts39"># attention à l'indentation</span><br/><span class="rvts46">else</span><span class="rvts38">: &nbsp; &nbsp; </span><span class="rvts39"># else est au même niveau que if</span><br/><span class="rvts75">&nbsp; &nbsp; </span><span class="rvts38">bloc d'instructions 2 &nbsp;</span><span class="rvts39"># attention à l'indentation</span><br/><span class="rvts39"># suite du programme</span></p>
+<p class="rvps7"><span class="rvts11">Si l'expression est vraie (True) alors le bloc d'instructions 1 est exécuté.</span><br/><span class="rvts11">Si l'expression est fausse (False) alors c'est le bloc d'instructions 2 qui est exécuté.</span></p>
+<p class="rvps8"><span class="rvts39"># script Condition2.py</span><br/><span class="rvts38">chaine = </span><span class="rvts40">input</span><span class="rvts38">(</span><span class="rvts52">"Note sur 20 : "</span><span class="rvts38">)</span><br/><span class="rvts38">note = </span><span class="rvts40">float</span><span class="rvts38">(chaine)</span><br/><span class="rvts46">if</span><span class="rvts38">&nbsp;note &gt;= 10.0:</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts39"># ce bloc est exécuté si l'expression (note &gt;= 10.0) est vraie</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts40">print</span><span class="rvts52">("J'ai la moyenne")</span><br/><span class="rvts46">else</span><span class="rvts38">:</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts39"># ce bloc est exécuté si l'expression (note &gt;= 10.0) est fausse</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts40">print</span><span class="rvts52">("C'est en dessous de la moyenne")</span><br/><span class="rvts40">print</span><span class="rvts52">("Fin du programme") </span></p>
+<p class="rvps8"><span class="rvts52">Exécuter </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><span class="rvts11">&nbsp; et tester</span></p>
+<p class="rvps7"><span class="rvts11">Pour traiter le cas des notes invalides (&lt;0 ou &gt;20), on peut imbriquer des instructions conditionnelles :</span></p>
+<p class="rvps8"><span class="rvts39"># script Condition3.py</span><br/><span class="rvts38">chaine = </span><span class="rvts40">input</span><span class="rvts38">(</span><span class="rvts52">"Note sur 20 : "</span><span class="rvts38">)</span><br/><span class="rvts38">note = </span><span class="rvts40">float</span><span class="rvts38">(chaine)</span><br/><span class="rvts46">if</span><span class="rvts38">&nbsp;note &gt; 20.0 </span><span class="rvts46">or</span><span class="rvts38">&nbsp;note &lt; 0.0:</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts39"># ce bloc est exécuté si l'expression (note &gt; 20.0 or note &lt; 0.0) est vraie</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts40">print</span><span class="rvts52">("Note invalide !")</span><br/><span class="rvts46">else</span><span class="rvts38">:</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts39"># ce bloc est exécuté si l'expression (note &gt; 20.0 or note &lt; 0.0) est fausse</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts46">if</span><span class="rvts38">&nbsp;note &gt;= 10.0:</span><br/><span class="rvts38">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts39"># ce bloc est exécuté si l'expression (note &gt;= 10.0) est vraie</span><br/><span class="rvts38">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts40">print</span><span class="rvts52">("J'ai la moyenne")</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts46">else</span><span class="rvts38">:</span><br/><span class="rvts38">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts39"># ce bloc est exécuté si l'expression (note &gt;= 10.0) est fausse</span><br/><span class="rvts38">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts40">print</span><span class="rvts52">("C'est en dessous de la moyenne")</span><br/><span class="rvts40">print</span><span class="rvts52">("Fin du programme") </span></p>
+<p class="rvps8"><span class="rvts52">Exécuter </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><span class="rvts11">&nbsp;et tester</span></p>
+<p class="rvps7"><span class="rvts11">On ajoute encore un niveau d'imbrication pour traiter les cas particuliers 0 et 20 :</span></p>
+<p class="rvps8"><span class="rvts39"># script Condition4.py</span><br/><span class="rvts38">chaine = </span><span class="rvts40">input</span><span class="rvts38">(</span><span class="rvts52">"Note sur 20 : "</span><span class="rvts38">)</span><br/><span class="rvts38">note = </span><span class="rvts40">float</span><span class="rvts38">(chaine)</span><br/><span class="rvts46">if</span><span class="rvts38">&nbsp;note &gt; 20.0 </span><span class="rvts46">or</span><span class="rvts38">&nbsp;note &lt; 0.0:</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts40">print</span><span class="rvts52">("Note invalide !")</span><br/><span class="rvts46">else</span><span class="rvts38">:</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts46">if</span><span class="rvts38">&nbsp;note &gt;= 10.0:</span><br/><span class="rvts38">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts40">print</span><span class="rvts52">("J'ai la moyenne")</span><br/><span class="rvts38">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts46">if</span><span class="rvts38">&nbsp;note == 20.0:</span><br/><span class="rvts38">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts39"># ce bloc est exécuté si l'expression (note == 20.0) est vraie</span><br/><span class="rvts38">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts40">print</span><span class="rvts52">("C'est même excellent !")</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts46">else</span><span class="rvts38">:</span><br/><span class="rvts38">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts40">print</span><span class="rvts52">("C'est en dessous de la moyenne")</span><br/><span class="rvts38">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts46">if</span><span class="rvts38">&nbsp;note == 0.0:</span><br/><span class="rvts38">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts39"># ce bloc est exécuté si l'expression (note == 0.0) est vraie</span><br/><span class="rvts38">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts40">print</span><span class="rvts52">("... lamentable !")</span><br/><span class="rvts40">print</span><span class="rvts52">("Fin du programme")</span></p>
+<p class="rvps8"><span class="rvts52">Exécuter </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><span class="rvts11">&nbsp;et tester</span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts15">Créé avec HelpNDoc Personal Edition: </span><a class="rvts16" href="https://www.helpndoc.com/fr/tour-des-fonctionnalites">Créer des documents d'aide PDF facilement</a></p>
+
+	</div>
+	
+	
+		<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				
+			</div>
+		</div>
+	
+	
+
+	
+</body>
+	
+</html>
+

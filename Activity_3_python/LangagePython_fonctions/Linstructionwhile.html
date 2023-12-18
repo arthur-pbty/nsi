@@ -1,0 +1,126 @@
+﻿
+
+<html>
+	
+<head>
+	<title>L'instruction while</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 6.3.0.298">
+	<meta name="description" content="" /> 
+	<meta name="keywords" content="">
+	
+	
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Activite_decouverte_Python.hml?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Linstructionwhile");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	
+</head>
+
+<body>
+
+
+
+	
+		<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">L'instruction while</h1>
+				
+				
+				<div id="topic_breadcrumb">
+					<a href="Lesbouclesinstructionsforwhile.html">Les boucles (instructions for, while)</a> &rsaquo;&rsaquo; 
+				</div>
+				
+			</div>
+			
+			<div id="topic_header_nav">
+				
+				
+				<a href="Lesbouclesinstructionsforwhile.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				
+				
+				<a href="Lesbouclesinstructionsforwhile.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				
+				
+				<a href="Linstructionfor.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+	
+	
+	<div id="topic_content">
+		
+<p></p>
+<h3 class="rvps12"><img alt="" style="padding : 1px;" src="lib/NouvelElement29.png"></h3>
+<h4 class="rvps13"><span class="rvts0"><span class="rvts59">Syntaxe</span></span></h4>
+<p class="rvps8"><span class="rvts46">while</span><span class="rvts38">&nbsp;expression: &nbsp;</span><span class="rvts39"># ne pas oublier le signe de ponctuation ':'</span><br/><span class="rvts75">&nbsp; &nbsp; </span><span class="rvts38">bloc d'instructions &nbsp;</span><span class="rvts39"># attention à l'indentation</span><br/><span class="rvts39"># suite du programme</span></p>
+<p class="rvps7"><span class="rvts49">Si l'expression est vraie (</span><span class="rvts76">True</span><span class="rvts49">) le bloc d'instructions est exécuté, puis l'expression est à nouveau évaluée.</span><br/><span class="rvts49">Le cycle continue jusqu'à ce que l'expression soit fausse (</span><span class="rvts76">False</span><span class="rvts49">) : on passe alors à la suite du programme.</span></p>
+<h4 class="rvps13"><span class="rvts0"><span class="rvts59">Exemple : un script qui compte de 1 à 4</span></span></h4>
+<p class="rvps8"><span class="rvts39"># script Boucle1.py</span><br/><span class="rvts39"># initialisation de la variable de comptage</span><br/><span class="rvts38">compteur = 1</span><br/><span class="rvts46">while</span><span class="rvts38">&nbsp;compteur &lt; 5:</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts39"># ce bloc est exécuté tant que la condition (compteur &lt; 5) est vraie</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts40">print</span><span class="rvts38">(compteur, compteur &lt; 5)</span><br/><span class="rvts38">&nbsp; &nbsp; compteur += 1 &nbsp; &nbsp;</span><span class="rvts39"># incrémentation du compteur, compteur = compteur + 1</span><br/><span class="rvts40">print</span><span class="rvts38">(compteur &lt; 5)</span><br/><span class="rvts40">print</span><span class="rvts52">("Fin de la boucle")</span></p>
+<p class="rvps8"><span class="rvts52">Exécuter </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><span class="rvts11">&nbsp;</span></p>
+<h4 class="rvps13"><span class="rvts0"><span class="rvts59">Table de multiplication par 8</span></span></h4>
+<p class="rvps8"><span class="rvts39"># script Boucle2.py</span><br/><span class="rvts38">compteur = 1 </span><span class="rvts39"># initialisation de la variable de comptage</span><br/><span class="rvts46">while</span><span class="rvts38">&nbsp;compteur &lt;= 10:</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts39"># ce bloc est exécuté tant que la condition (compteur &lt;= 10) est vraie</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts40">print</span><span class="rvts38">(compteur, </span><span class="rvts52">'* 8 ='</span><span class="rvts38">, compteur*8)</span><br/><span class="rvts38">&nbsp; &nbsp; compteur += 1 &nbsp; &nbsp;</span><span class="rvts39"># incrémentation du compteur, compteur = compteur + 1</span><br/><span class="rvts40">print</span><span class="rvts52">("Et voilà !")</span></p>
+<p class="rvps8"><span class="rvts52">Exécuter </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><span class="rvts11">&nbsp; </span></p>
+<h4 class="rvps13"><span class="rvts0"><span class="rvts59">Affichage de l'heure courante</span></span></h4>
+<p class="rvps8"><span class="rvts39"># script Boucle3.py</span><br/><span class="rvts46">import</span><span class="rvts38">&nbsp;time &nbsp; &nbsp; </span><span class="rvts39"># importation du module time</span><br/><span class="rvts38">quitter = </span><span class="rvts52">'n'</span><span class="rvts38">&nbsp; &nbsp;</span><span class="rvts39"># initialisation</span><br/><span class="rvts46">while</span><span class="rvts38">&nbsp;quitter != </span><span class="rvts52">'o'</span><span class="rvts38">:</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts39"># ce bloc est exécuté tant que la condition est vraie</span><br/><span class="rvts39">&nbsp; &nbsp; # strftime() est une fonction du module time</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts40">print</span><span class="rvts38">(</span><span class="rvts52">'Heure courante '</span><span class="rvts38">, time.strftime(</span><span class="rvts52">'%H:%M:%S'</span><span class="rvts38">))</span><br/><span class="rvts38">&nbsp; &nbsp; quitter = input(</span><span class="rvts52">"Voulez-vous quitter le programme (o/n) ? "</span><span class="rvts38">)</span><br/><span class="rvts40">print</span><span class="rvts52">("A bientôt")</span></p>
+<p class="rvps8"><span class="rvts52">Exécuter </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><span class="rvts11">&nbsp; et tester</span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts15">Créé avec HelpNDoc Personal Edition: </span><a class="rvts16" href="https://www.helpndoc.com/fr/creer-des-livres-numeriques-epub">Produire des livres EPub gratuitement</a></p>
+
+	</div>
+	
+	
+		<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				
+			</div>
+		</div>
+	
+	
+
+	
+</body>
+	
+</html>
+

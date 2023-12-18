@@ -1,0 +1,129 @@
+﻿
+
+<html>
+	
+<head>
+	<title>Programmation Orient&eacute;e Objet (POO)</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 6.3.0.298">
+	<meta name="description" content="" /> 
+	<meta name="keywords" content="">
+	
+	
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Activite_decouverte_Python.hml?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("ProgrammationOrienteeObjetPOO");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	
+</head>
+
+<body>
+
+
+
+	
+		<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Programmation Orient&eacute;e Objet (POO)</h1>
+				
+				
+				<div id="topic_breadcrumb">
+					<a href="Variablestypesetoperateurs.html">Variables, types et op&eacute;rateurs</a> &rsaquo;&rsaquo; 
+				</div>
+				
+			</div>
+			
+			<div id="topic_header_nav">
+				
+				
+				<a href="Variablestypesetoperateurs.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				
+				
+				<a href="Autrestypes.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				
+				
+				<a href="Immuablevsmutable.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+	
+	
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps7"><span class="rvts54">Python est un langage de programmation&nbsp;</span><span class="rvts62">orienté objet</span><span class="rvts54">&nbsp;(comme les langages C++, Java, PHP, Ruby...).</span><br/><span class="rvts54">Une variable est en fait un&nbsp;</span><span class="rvts62">objet</span><span class="rvts54">&nbsp;d'une certaine&nbsp;</span><span class="rvts62">classe</span><span class="rvts54">.</span></p>
+<p class="rvps7"><span class="rvts21">Tous les types du langage python sont également des objets.</span></p>
+<p class="rvps7"><span class="rvts54">Par exemple, la variable&nbsp;</span><span class="rvts61">amis</span><span class="rvts54">&nbsp;est un objet de la classe&nbsp;</span><span class="rvts61">list</span><span class="rvts54">.</span><br/><span class="rvts54">On dit aussi que la variable&nbsp;</span><span class="rvts61">amis</span><span class="rvts54">&nbsp;est une&nbsp;</span><span class="rvts62">instance</span><span class="rvts54">&nbsp;de la classe&nbsp;</span><span class="rvts61">list</span><span class="rvts54">.</span><br/><span class="rvts54">L'</span><span class="rvts62">instanciation</span><span class="rvts54">&nbsp;(action d'instancier) est la création d'un objet à partir d'une classe.</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts39"># instanciation de l'objet amis de la classe list</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;amis = [</span><span class="rvts52">'Nicolas'</span><span class="rvts38">, </span><span class="rvts52">'Julie'</span><span class="rvts38">] </span><span class="rvts39"># ou bien : amis = list(['Nicolas', 'Julie'])</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(</span><span class="rvts40">type</span><span class="rvts38">(amis)) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"><br/></span></p>
+<p class="rvps7"><span class="rvts54">Une classe possède des fonctions que l'on appelle&nbsp;</span><span class="rvts62">méthodes</span><span class="rvts54">&nbsp;et des données que l'on appelle&nbsp;</span><span class="rvts62">attributs</span><span class="rvts54">.</span></p>
+<p class="rvps7"><span class="rvts54">La méthode&nbsp;</span><span class="rvts55">append()</span><span class="rvts54">&nbsp;de la classe&nbsp;</span><span class="rvts55">list</span><span class="rvts33">&nbsp;</span><span class="rvts54">ajoute un nouvel élément en fin de liste :</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts39"># instanciation d'une liste vide</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;amis = [] &nbsp; </span><span class="rvts39"># ou bien : amis = list()</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;amis.append(</span><span class="rvts52">'Nicolas'</span><span class="rvts38">) </span><span class="rvts39"># synthase générale : objet.méthode(arguments)</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(amis) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;amis.append(</span><span class="rvts52">'Julie'</span><span class="rvts38">) </span><span class="rvts39"># ou bien : amis = amis + ['Julie']</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(amis) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;amis.append(</span><span class="rvts52">'Pauline'</span><span class="rvts38">)</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(amis) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;amis.sort() &nbsp; </span><span class="rvts39"># la méthode sort() trie les éléments</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(amis) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;amis.reverse() &nbsp;</span><span class="rvts39"># la méthode reverse() inverse la liste des éléments</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(amis) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps7"><span class="rvts54">La méthode&nbsp;</span><span class="rvts55">lower()</span><span class="rvts54">&nbsp;de la classe&nbsp;</span><span class="rvts55">str</span><span class="rvts54">&nbsp;retourne la chaîne de caractères en casse minuscule :</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts39"># la variable chaine est une instance de la classe str</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;chaine = </span><span class="rvts52">"BONJOUR"</span><span class="rvts38">&nbsp; </span><span class="rvts39"># ou bien : chaine = str("BONJOUR")</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;chaine2 = chaine.lower() </span><span class="rvts39"># on applique la méthode lower() à l'objet chaine</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(chaine2) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(chaine) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps7"><span class="rvts54">La méthode&nbsp;</span><span class="rvts55">pop()</span><span class="rvts54">&nbsp;de la classe&nbsp;</span><span class="rvts55">dict</span><span class="rvts54">&nbsp;supprime une clé :</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts39"># instanciation de l'objet moyennes de la classe dict</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;moyennes = {</span><span class="rvts52">'sport'</span><span class="rvts38">: 11.0, </span><span class="rvts52">'anglais'</span><span class="rvts38">: 14.3, </span><span class="rvts52">'math'</span><span class="rvts38">: 12.5}</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts39"># ou : moyennes = dict({'sport': 11.0, 'anglais': 14.3, 'math': 12.5})</span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;moyennes.pop(</span><span class="rvts52">'anglais'</span><span class="rvts38">) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts41"></span><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(moyennes) </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(moyennes.keys()) &nbsp;</span><span class="rvts39"># la méthode keys() retourne la liste des clés </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;</span><span class="rvts40">print</span><span class="rvts38">(moyennes.values()) &nbsp;</span><span class="rvts39"># la méthode values() retourne la liste des valeurs </span><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts15">Créé avec HelpNDoc Personal Edition: </span><a class="rvts16" href="https://www.helpndoc.com/fr">Générateur d'aides CHM gratuit</a></p>
+
+	</div>
+	
+	
+		<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				
+			</div>
+		</div>
+	
+	
+
+	
+</body>
+	
+</html>
+

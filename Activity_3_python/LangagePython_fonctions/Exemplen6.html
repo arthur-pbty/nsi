@@ -1,0 +1,116 @@
+﻿
+
+<html>
+	
+<head>
+	<title>Exemple n&deg;6</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 6.3.0.298">
+	<meta name="description" content="" /> 
+	<meta name="keywords" content="">
+	
+	
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Activite_decouverte_Python.hml?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Exemplen6");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	
+</head>
+
+<body>
+
+
+
+	
+		<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Exemple n&deg;6</h1>
+				
+				
+				<div id="topic_breadcrumb">
+					<a href="Lesfonctions.html">Les fonctions</a> &rsaquo;&rsaquo; <a href="Linstructiondef.html">L'instruction def</a> &rsaquo;&rsaquo; 
+				</div>
+				
+			</div>
+			
+			<div id="topic_header_nav">
+				
+				
+				<a href="Linstructiondef.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				
+				
+				<a href="Exemplen5.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				
+				
+				<a href="Porteedevariablesvariablesglobal.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+	
+	
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps7"><span class="rvts11">Une fonction qui affiche la parité d'un nombre entier.</span><br/><span class="rvts11">Il peut y avoir plusieurs instructions&nbsp;</span><span class="rvts17">return </span><span class="rvts11">dans une fonction.</span><br/><span class="rvts11">L'instruction&nbsp;</span><span class="rvts17">return</span><span class="rvts11">&nbsp;provoque le retour immédiat de la fonction.</span></p>
+<p class="rvps8"><span class="rvts39"># script Fonction6.py</span><br/><span class="rvts39"># définition de fonction</span><br/><span class="rvts46">def</span><span class="rvts38">&nbsp;</span><span class="rvts41">parite</span><span class="rvts38">(nombre):</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts52">""" Affiche la parité d'un nombre entier """</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts46">if</span><span class="rvts38">&nbsp;nombre%2 == 1: &nbsp; </span><span class="rvts39"># L'opérateur % donne le reste d'une division</span><br/><span class="rvts38">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts40">print</span><span class="rvts38">(nombre, </span><span class="rvts52">'est impair'</span><span class="rvts38">)</span><br/><span class="rvts38">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts46">return</span><br/><span class="rvts38">&nbsp; &nbsp; </span><span class="rvts46">if</span><span class="rvts38">&nbsp;nombre%2 == 0:</span><br/><span class="rvts38">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts40">print</span><span class="rvts38">(nombre, </span><span class="rvts52">'est pair'</span><span class="rvts38">)</span><br/><span class="rvts38">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts46">return</span></p>
+<p class="rvps8"><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;parite(13)</span><br/><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"><br/><span class="rvts37">&gt;&gt;&gt;</span><span class="rvts38">&nbsp;parite(24)</span><br/><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts15">Créé avec HelpNDoc Personal Edition: </span><a class="rvts16" href="https://www.helpndoc.com/fr/tour-des-fonctionnalites">Créer des documents d'aide HTML facilement</a></p>
+
+	</div>
+	
+	
+		<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				
+			</div>
+		</div>
+	
+	
+
+	
+</body>
+	
+</html>
+
