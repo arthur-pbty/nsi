@@ -1,3 +1,6 @@
+# Ecrire une fonction qui retourne une grille de numéros du jeu Euro Millions.
+# On utilisera la fonction sample() du module random.
+
 from random import sample
 
 def euromillions():
